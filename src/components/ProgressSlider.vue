@@ -13,14 +13,14 @@ const progress = ref<number>(0)
 
 const items = [
   {
-    img: "/Intro/Schritt1.svg",
+    img: "/Intro/Schritt1.webp",
 
     title: 'Einfacher Start',
     desc: 'Hole den passenden Plan und erhalte eine Bestätigungs-E-Mail. Melde dich bei Trello an, um loszulegen.',
     buttonIcon: '/Icons/search.svg',
   },
   {
-    img: "/Intro/Schritt2.svg",
+    img: "/Intro/Schritt2.webp",
 
 
 
@@ -30,7 +30,7 @@ const items = [
     buttonIcon: '/Icons/payment.svg',
   },
   {
-    img: "/Intro/Schritt3.svg",
+    img: "/Intro/Schritt3.webp",
 
 
 
@@ -83,8 +83,8 @@ watch(active, () => {
               enterFrom="opacity-0 scale-105" enterTo="opacity-100 scale-100"
               leave="transition ease-in-out duration-300 absolute" leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95">
-              <img class="rounded-xl w-full h-auto max-w-[869px] my-6 sm:h-[481px]" :src="item.img" :alt="item.title"
-                width="869" height="481" loading="lazy">
+              <img class="rounded-xl " :src="item.img" :alt="item.title"
+                loading="lazy">
             </TransitionRoot>
           </template>
 
