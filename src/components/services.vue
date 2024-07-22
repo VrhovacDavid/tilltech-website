@@ -1,6 +1,6 @@
 <template>
 
-    <div class="max-w-7xl  mx-auto flex flex-col sm:flex-row items-center px-6">
+    <div class="max-w-7xl py-6 sm:py-12 mx-auto flex flex-col sm:flex-row items-center px-6">
         <div class="w-full justify-center  flex -order-first sm:order-first ">
             <div class="   w-[400px] h-[400px] grid grid-cols-2 auto-rows-auto gap-5 ">
                 <div class="background-gradient rounded-xl text-white flex justify-center items-center font-bold">

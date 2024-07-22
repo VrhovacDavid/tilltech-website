@@ -13,14 +13,15 @@ const progress = ref<number>(0)
 
 const items = [
   {
-    img: "/Mockup/Mockup1.svg",
+    img: "/Intro/Schritt1.svg",
 
     title: 'Einfacher Start',
     desc: 'Hole den passenden Plan und erhalte eine Bestätigungs-E-Mail. Melde dich bei Trello an, um loszulegen.',
     buttonIcon: '/Icons/search.svg',
   },
   {
-    img: "/Mockup/Mockup2.svg",
+    img: "/Intro/Schritt2.svg",
+
 
 
 
@@ -29,7 +30,8 @@ const items = [
     buttonIcon: '/Icons/payment.svg',
   },
   {
-    img: "/Mockup/Mockup3.svg",
+    img: "/Intro/Schritt3.svg",
+
 
 
     title: 'Schnelle Lieferung',
@@ -70,7 +72,7 @@ watch(active, () => {
 
 <template>
 
-  <div class="max-w-7xl py-12  mx-auto flex flex-col  sm:flex-row items-center">
+  <div class="max-w-7xl mt-12 py-6 sm:py-12  mx-auto flex flex-col  sm:flex-row items-center">
 
     <div class="px-6 py- w-full justify-center  flex -order-first sm:order-first ">
       <div class="transition-all duration-150 delay-300 ease-in-out">
@@ -81,7 +83,7 @@ watch(active, () => {
               enterFrom="opacity-0 scale-105" enterTo="opacity-100 scale-100"
               leave="transition ease-in-out duration-300 absolute" leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95">
-              <img class="rounded-xl w-96 h-[800px] " :src="item.img" :alt="item.title">
+              <img class="rounded-xl w-[869px] my-6 h-[281px] sm:h-[481px] " :src="item.img" :alt="item.title">
             </TransitionRoot>
           </template>
 

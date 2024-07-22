@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden  py-12 sm:py-32 px-4">
+  <div class="overflow-hidden  py-6 sm:py-12 mt-12 px-4">
     <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
       <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center">
         <div class=" lg:px-0 lg:pr-4 lg:pt-4">
@@ -30,9 +30,14 @@
 
           </div>
         </div>
+        <ModalVideo
+    :thumb="VideoThumb"
+    :thumbWidth="768"
+    :thumbHeight="432"
+    :video="VideoSrc"
+    :videoWidth="1920"
+    :videoHeight="1080" />
 
-        <img src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="Product screenshot"
-          class=" rounded-xl  shadow-xl bg-gray-800 ring-1 ring-white/10" />
 
       </div>
     </div>
@@ -40,7 +45,11 @@
 </template>
 
 <script setup>
+import ModalVideo from './ModalVideo.vue';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid'
+
+const VideoSrc = 'https://videocdn.cdnpk.net/videos/fd7e918a-0d3b-4c38-ad02-f07d8435f8ad/horizontal/previews/clear/large.mp4?token=exp=1721648353~hmac=913ca3bf6b2665adc72e9dbea9b8818e12539987e1151d1ced6ee3c43c6a0d24'
+const VideoThumb = '/TillTech.ico'
 
 const features = [
   {
