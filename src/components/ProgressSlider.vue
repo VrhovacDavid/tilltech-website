@@ -83,7 +83,8 @@ watch(active, () => {
               enterFrom="opacity-0 scale-105" enterTo="opacity-100 scale-100"
               leave="transition ease-in-out duration-300 absolute" leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95">
-              <img class="rounded-xl  my-6 h-full w-full " :src="item.img" :alt="item.title" >
+              <img class="rounded-xl w-full h-auto max-w-[869px] my-6 sm:h-[481px]" :src="item.img" :alt="item.title"
+                width="869" height="481" loading="lazy">
             </TransitionRoot>
           </template>
 
@@ -100,7 +101,7 @@ watch(active, () => {
 
         <h2 class="font-bold text-4xl">So funktioniert's!</h2>
 
-        <template :key="index" v-for="(item, index) in items" >
+        <template :key="index" v-for="(item, index) in items">
 
 
           <button class=" rounded focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 group my-2 "
