@@ -48,7 +48,7 @@
 import ModalVideo from './ModalVideo.vue';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid'
 
-const VideoSrc = 'https://videocdn.cdnpk.net/videos/fd7e918a-0d3b-4c38-ad02-f07d8435f8ad/horizontal/previews/clear/large.mp4?token=exp=1721648353~hmac=913ca3bf6b2665adc72e9dbea9b8818e12539987e1151d1ced6ee3c43c6a0d24'
+const VideoSrc = 'https://backend.dv-it.ch/wp-content/uploads/2024/07/IntroVideo.mp4'
 const VideoThumb = '/TillTech.ico'
 
 const features = [

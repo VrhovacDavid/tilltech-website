@@ -49,79 +49,79 @@
                 <ul
                     class="flex   items-center justify-center  md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll  ">
                     <li>
-                        <img class="h-6" src="/Logos/adobe.svg" alt="Facebook" />
+                        <img class="h-6" loading="lazy" src="/Logos/adobe.svg" alt="Facebook" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/airbnb.svg" alt="Disney" />
+                        <img class="h-6" loading="lazy" src="/Logos/airbnb.svg" alt="Disney" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/calendly.svg" alt="Facebook" />
+                        <img class="h-6" loading="lazy" src="/Logos/calendly.svg" alt="Facebook" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/discord.svg" alt="Apple" />
+                        <img class="h-6" loading="lazy" src="/Logos/discord.svg" alt="Apple" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/github.svg" alt="Spark" />
+                        <img class="h-6" loading="lazy" src="/Logos/github.svg" alt="Spark" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/google.svg" alt="Samsung" />
+                        <img class="h-6" loading="lazy" src="/Logos/google.svg" alt="Samsung" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/loom.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/loom.svg" alt="Quora" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/netflix.svg" alt="Sass" />
+                        <img class="h-6" loading="lazy" src="/Logos/netflix.svg" alt="Sass" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/shopify.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/shopify.svg" alt="Quora" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/spotify.svg" alt="Sass" />
+                        <img class="h-6" loading="lazy" src="/Logos/spotify.svg" alt="Sass" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/twitch.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/twitch.svg" alt="Quora" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/youtube.svg" alt="Sass" />
+                        <img class="h-6" loading="lazy" src="/Logos/youtube.svg" alt="Sass" />
                     </li>
                 </ul>
                 <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
                     aria-hidden="true">
                     <li>
-                        <img class="h-6" src="/Logos/adobe.svg" alt="Facebook" />
+                        <img class="h-6" loading="lazy" src="/Logos/adobe.svg" alt="Facebook" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/airbnb.svg" alt="Disney" />
+                        <img class="h-6" loading="lazy" src="/Logos/airbnb.svg" alt="Disney" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/calendly.svg" alt="Facebook" />
+                        <img class="h-6" loading="lazy" src="/Logos/calendly.svg" alt="Facebook" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/discord.svg" alt="Apple" />
+                        <img class="h-6" loading="lazy" src="/Logos/discord.svg" alt="Apple" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/github.svg" alt="Spark" />
+                        <img class="h-6" loading="lazy" src="/Logos/github.svg" alt="Spark" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/google.svg" alt="Samsung" />
+                        <img class="h-6" loading="lazy" src="/Logos/google.svg" alt="Samsung" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/loom.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/loom.svg" alt="Quora" />
                     </li>
                     <li>
                         <img class="h-6" src="/Logos/netflix.svg" alt="Sass" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/shopify.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/shopify.svg" alt="Quora" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/spotify.svg" alt="Sass" />
+                        <img class="h-6" loading="lazy" src="/Logos/spotify.svg" alt="Sass" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/twitch.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/twitch.svg" alt="Quora" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/youtube.svg" alt="Sass" />
+                        <img class="h-6" loading="lazy" src="/Logos/youtube.svg" alt="Sass" />
                     </li>
                 </ul>
             </div>
@@ -149,9 +149,9 @@
 
 
             <div class="flex gap-x-4 sm:gap-x-8  py-4 relative -translate-x-12  ">
-                <div v-for="image in images2" :key="image.img" class="">
+                <div v-for="image in images2" :key="image.img" loading="lazy">
                     <div class="h-48 w-48 sm:h-56 sm:w-56 lg:h-64 lg:w-64">
-                        <img :src="image.img" :alt="image.alt" class=" rounded-lg  shadow-xl ">
+                        <img :src="image.img" :alt="image.alt" class=" rounded-lg  shadow-xl " loading="lazy">
                     </div>
                 </div>
             </div>
