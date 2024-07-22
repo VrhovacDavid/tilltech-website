@@ -32,8 +32,8 @@
         </div>
         <ModalVideo
     :thumb="VideoThumb"
-    :thumbWidth="768"
-    :thumbHeight="432"
+    :thumbWidth="1920"
+    :thumbHeight="1080"
     :video="VideoSrc"
     :videoWidth="1920"
     :videoHeight="1080" />
@@ -49,7 +49,7 @@ import ModalVideo from './ModalVideo.vue';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid'
 
 const VideoSrc = 'https://backend.dv-it.ch/wp-content/uploads/2024/07/IntroVideo.mp4'
-const VideoThumb = '/TillTech.ico'
+const VideoThumb = '/Intro/Thumbnail.webp'
 
 const features = [
   {
