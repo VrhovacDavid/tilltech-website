@@ -52,7 +52,7 @@
 
             <div class=" rounded-xl border-2 border-gray-400 w-full  mx-auto background-gradient-black">
 
-                <img class=" rounded-t-xl bg-white/5 ring-1 ring-white/10" src="/IconPack.svg" alt="App screenshot" />
+                <img class=" rounded-t-xl bg-white/5 ring-1 ring-white/10" src="/Download.webp" alt="App screenshot" />
 
                 <h3 class="text-center font-black text-3xl text-white pt-2 my-4">Free Icon Pack 🔥</h3>
                 <p class="mt-6 px-4 text-center text-gray-300">Eine Kollektion von +200 Icons in Vector und SVG Formaten

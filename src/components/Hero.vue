@@ -10,8 +10,8 @@
             <div class="text-left z-10  px-4 max-w-4xl  flex-grow flex-col flex items-start justify-center">
 
 
+                <img class="hidden md:block h-20 -m-2 lg:h-12 xl:h-24" src="/Success/GoogleReviews.webp" alt="Google Bewertungen">
 
-                <img class="  h-20 -m-2 lg:h-12 xl:h-24" src="/Success/GoogleReviews.svg" alt="">
 
 
 
