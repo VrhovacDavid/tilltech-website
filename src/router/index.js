@@ -6,6 +6,10 @@ import CaseStudy from '../pages/casestudy/CaseStudy.vue'
 import Portfolio from '../pages/Portfolio.vue'
 import BlogPost from '../pages/BlogPost.vue'
 import BioLinks from '../pages/BioLinks.vue'
+import NotFound from '../pages/NotFound.vue'
+import Robots from '../pages/Robots.txt'
+
+
 
 
 
@@ -17,6 +21,11 @@ const router = createRouter({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/:notFound',
+      name: '404',
+      component: NotFound
     },
     {
       path: '/blog/',
@@ -49,6 +58,8 @@ const router = createRouter({
       name: 'BioLinks',
       component: BioLinks
     },
+
+
    
   ],
 

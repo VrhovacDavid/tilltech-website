@@ -14,11 +14,11 @@
           <ul role="list" class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0">
             <li v-for="product in limitedCaseStudies" :key="product.id" class="inline-flex w-64 flex-col text-center lg:w-auto">
               <div class="group relative">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-2xl shadow-xl relative">
+                <div class=" h-[250px] w-[250px] overflow-hidden rounded-2xl shadow-xl relative">
                   <img
                     :src="product.img"
                     :alt="product.alt"
-                    class="relative h-full w-full object-cover object-center  "
+                    class=" h-[250px] w-[250px]   "
                   />
                  
                 </div>

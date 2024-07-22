@@ -3,36 +3,47 @@
   <url>
     <loc>https://tilltech.ch/</loc>
     <lastmod>2024-07-22T16:05:44+01:00</lastmod>
-    <priority>0.8</priority>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://tilltech.ch/blog</loc>
     <lastmod>2024-07-22T16:05:44+01:00</lastmod>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tilltech.ch/services</loc>
     <lastmod>2024-07-22T16:05:44+01:00</lastmod>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
+
   </url>
   <url>
     <loc>https://tilltech.ch/casestudy</loc>
     <lastmod>2024-07-22T16:05:44+01:00</lastmod>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
+
   </url>
   <url>
     <loc>https://tilltech.ch/portfolio</loc>
     <lastmod>2024-07-22T16:05:44+01:00</lastmod>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
+
   </url>
   <url>
     <loc>https://tilltech.ch/blogpost</loc>
     <lastmod>2024-07-22T16:05:44+01:00</lastmod>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
+
   </url>
   <url>
     <loc>https://tilltech.ch/links</loc>
     <lastmod>2024-07-22T16:05:44+01:00</lastmod>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
+
+  </url>
+    <url>
+    <loc>https://tilltech.ch/:notFound</loc>
+    <lastmod>2024-07-22T16:05:44+01:00</lastmod>
+    <priority>0.8</priority>
+
   </url>
 </urlset>
