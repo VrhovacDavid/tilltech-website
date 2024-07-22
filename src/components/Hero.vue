@@ -29,7 +29,7 @@
                         class="text-sm  sm:text-base px-4 font-bold bg-btn-black shadow-lg shadow-white/20 rounded-full py-2 text-white">
                         Projekt Starten
                     </a>
-                    <a href="https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07" class="text-sm  sm:text-base px-4 font-medium leading-6 py-2 text-white"> oder
+                    <a href="https://calendly.com/tilltech/tilltech-infogesprach" class="text-sm  sm:text-base px-4 font-medium leading-6 py-2 text-white"> oder
                         Call buchen
                     </a>
 

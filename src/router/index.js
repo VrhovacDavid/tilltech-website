@@ -7,7 +7,7 @@ import Portfolio from '../pages/Portfolio.vue'
 import BlogPost from '../pages/BlogPost.vue'
 import BioLinks from '../pages/BioLinks.vue'
 import NotFound from '../pages/NotFound.vue'
-import Robots from '../pages/Robots.txt'
+
 
 
 

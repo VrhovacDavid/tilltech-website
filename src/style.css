@@ -6,7 +6,7 @@
 
 .background-gradient {
   background: linear-gradient(to bottom right, #5046E5, #9966FF);
-  background-size: cover;
+  background-size: fill;
   position: relative;
   overflow: hidden; /* Add this line to clip the pseudo-element */
 }

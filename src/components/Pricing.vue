@@ -122,7 +122,7 @@
                             :class="[tier.featured ? 'background-gradient-black text-white hover:bg-white/20 focus-visible:outline-white' : 'bg-btn-black text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600', 'mt-6  block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2']">{{
                                 tier.cta }}</a>
                         <a class="mt-6 block underline rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
-                            href="https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07">oder einen Call buchen</a> 
+                            href="https://calendly.com/tilltech/tilltech-infogesprach">oder Call buchen</a> 
                     </div>
 
                 </div>
