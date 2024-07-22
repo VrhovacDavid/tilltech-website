@@ -83,7 +83,7 @@ watch(active, () => {
               enterFrom="opacity-0 scale-105" enterTo="opacity-100 scale-100"
               leave="transition ease-in-out duration-300 absolute" leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95">
-              <img class="rounded-xl w-[869px] my-6 h-[281px] sm:h-[481px] " :src="item.img" :alt="item.title">
+              <img class="rounded-xl  my-6 h-full w-full " :src="item.img" :alt="item.title" >
             </TransitionRoot>
           </template>
 
