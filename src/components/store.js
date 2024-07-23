@@ -1,19 +1,18 @@
-import {reactive} from 'vue'
+import { reactive } from 'vue'
+
 
 const store = reactive({
-     posts : [
-       
-      ]
-      
+      posts: []
 })
-export  {store}
+
+export { store }
 
 
 
 const casestudy = reactive({
-      singlecase : [
-        
-       ]
-       
- })
- export  {casestudy}
+      singlecase: [
+
+      ]
+
+})
+export { casestudy }

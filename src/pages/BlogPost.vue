@@ -1,12 +1,35 @@
 <script setup>
-import { reactive } from 'vue';
+import { reactive, computed } from 'vue';
+import { marked } from 'marked';
 import { store } from '../components/store';
 import supabase from '../lib/supabase';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
 
-let post = reactive({});
+// Configure marked
+marked.setOptions({
+  breaks: true,
+  renderer: new marked.Renderer()
+});
+
+const renderer = {
+  paragraph(text) {
+    return text;
+  }
+};
+
+marked.use({ renderer });
+
+const post = reactive({});
+
+const bodyHtml = computed(() => {
+  return marked(post.body || '');
+});
+
+const schlusswortHtml = computed(() => {
+  return marked(post.schlusswort || '');
+});
 
 const fetchPost = async (id) => {
     // Die 'id' sollte von den Routenparametern kommen
@@ -36,13 +59,10 @@ const fetchPost = async (id) => {
     }
 
     Object.assign(post, data);
-
-
 };
 
 // Die ID direkt beim Aufruf der Funktion übergeben
 fetchPost(route.params.id);
-
 </script>
 
 
@@ -79,7 +99,7 @@ fetchPost(route.params.id);
 
 
 
-                <p class="my-4 px-4" v-html="post.body"></p>
+                <p class="my-4 px-4 markdown-body" v-html="bodyHtml"></p>
 
                 <div
                     class="relative isolate overflow-hidden background-gradient-black px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
@@ -101,7 +121,7 @@ fetchPost(route.params.id);
                 </div>
                 <h1 class="text-4xl pt-12 pb-4 font-black px-4 ">Schlusswort</h1>
 
-                <p v-html="post.schlusswort" class=" px-4 pb-4 text-start"></p>
+                <p v-html="schlusswortHtml" class=" px-4 pb-4 text-start"></p>
             </div>
 
 
@@ -112,3 +132,138 @@ fetchPost(route.params.id);
         </div>
     </div>
 </template>
+
+
+<style>
+.markdown-body h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body h2 {
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body h6 {
+  font-size: 0.875em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+
+.markdown-body li {
+  margin-bottom: 0.5em;
+}
+
+.markdown-body a {
+  color: #9d00b8;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 20px;
+  margin-left: 0;
+  font-style: italic;
+  color: #666;
+}
+
+.markdown-body code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.markdown-body pre {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.markdown-body th, .markdown-body td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.markdown-body th {
+  background-color: #f4f4f4;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown-body .intro {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.markdown-body .tool {
+  
+  margin-top: 10px;
+}
+
+.markdown-body .advantages {
+  color: green;
+  margin-left: 10px;
+}
+
+.markdown-body .disadvantages {
+  color: red;
+  margin-left: 10px;
+}
+
+</style>
