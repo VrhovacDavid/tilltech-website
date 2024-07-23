@@ -100,13 +100,13 @@
                         <img class="h-6 w-24" loading="lazy" src="/Logos/discord.svg" alt="Discord" />
                     </li>
                     <li>
-                        <img class="h-6 w-6 sm:w-24" loading="lazy" src="/Logos/github.svg" alt="Github" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/github.svg" alt="Github" />
                     </li>
                     <li>
                         <img class="h-6 w-6" loading="lazy" src="/Logos/google.svg" alt="Google" />
                     </li>
                     <li>
-                        <img class="h-6 w-6 sm:w-24" loading="lazy" src="/Logos/loom.svg" alt="Loom" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/loom.svg" alt="Loom" />
                     </li>
                     <li>
                         <img class="h-6 w-24" loading="lazy" src="/Logos/netflix.svg" alt="Netflix" />
@@ -151,7 +151,7 @@
             <div class="flex gap-x-4 sm:gap-x-8  py-4 relative -translate-x-12  ">
                 <div v-for="image in images2" :key="image.img" loading="lazy">
                     <div class="h-48 w-48 sm:h-56 sm:w-56 lg:h-64 lg:w-64">
-                        <img :src="image.img" :alt="image.alt" class=" rounded-lg  shadow-xl " loading="lazy">
+                        <img :src="image.img" :alt="image.alt" class="h-48 w-48 sm:h-56 sm:w-56 lg:h-64 lg:w-64 rounded-lg  shadow-xl " loading="lazy">
                     </div>
                 </div>
             </div>
