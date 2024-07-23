@@ -107,7 +107,7 @@ watch(active, () => {
           <button class=" rounded focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 group my-2 "
             @click="active = index">
             <span class="text-start flex flex-col items-start"
-              :class="active === index ? '' : 'opacity-50 group-hover:opacity-100 group-focus:opacity-100 transition-opacity'">
+              :class="active === index ? '' : 'opacity-80 group-hover:opacity-100 group-focus:opacity-100 transition-opacity'">
               <div class="flex flex-row items-center justify-center gap-x-4">
                 <span class="flex items-center justify-center relative w-10 h-10 rounded-full background-gradient mb-2">
                   <img :src="item.buttonIcon" :alt="item.title">

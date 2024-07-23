@@ -197,12 +197,12 @@ function mouseEnd() {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .indicator-dot {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: rgb(192, 192, 192);
   border: none;
