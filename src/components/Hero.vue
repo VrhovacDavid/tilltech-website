@@ -47,81 +47,81 @@
             <div
                 class="w-full pb-6  inline-flex flex-nowrap overflow-hidden  [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
                 <ul
-                    class="flex   items-center justify-center  md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll  ">
+                    class="flex   items-center justify-center  md:justify-start [&_li]:mx-2 [&_img]:max-w-none animate-infinite-scroll  ">
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/adobe.svg" alt="Adobe" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/adobe.svg" alt="Adobe" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/airbnb.svg" alt="AirBnb" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/airbnb.svg" alt="AirBnb" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/calendly.svg" alt="Calendly" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/calendly.svg" alt="Calendly" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/discord.svg" alt="Discord" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/discord.svg" alt="Discord" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/github.svg" alt="Github" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/github.svg" alt="Github" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/google.svg" alt="Google" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/google.svg" alt="Google" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/loom.svg" alt="Loom" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/loom.svg" alt="Loom" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/netflix.svg" alt="Netflix" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/netflix.svg" alt="Netflix" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/shopify.svg" alt="Shopify" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/shopify.svg" alt="Shopify" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/spotify.svg" alt="Spotify" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/spotify.svg" alt="Spotify" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/twitch.svg" alt="Twitch" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/twitch.svg" alt="Twitch" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/youtube.svg" alt="YouTube" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/youtube.svg" alt="YouTube" />
                     </li>
                 </ul>
-                <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+                <ul class="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-none animate-infinite-scroll"
                     aria-hidden="true">
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/adobe.svg" alt="Adobe" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/adobe.svg" alt="Adobe" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/airbnb.svg" alt="AirBnb" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/airbnb.svg" alt="AirBnb" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/calendly.svg" alt="Calendly" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/calendly.svg" alt="Calendly" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/discord.svg" alt="Discord" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/discord.svg" alt="Discord" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/github.svg" alt="Github" />
+                        <img class="h-6 w-6 sm:w-24" loading="lazy" src="/Logos/github.svg" alt="Github" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/google.svg" alt="Google" />
+                        <img class="h-6 w-6" loading="lazy" src="/Logos/google.svg" alt="Google" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/loom.svg" alt="Loom" />
+                        <img class="h-6 w-6 sm:w-24" loading="lazy" src="/Logos/loom.svg" alt="Loom" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/netflix.svg" alt="Netflix" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/netflix.svg" alt="Netflix" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/shopify.svg" alt="Shopify" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/shopify.svg" alt="Shopify" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/spotify.svg" alt="Spotify" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/spotify.svg" alt="Spotify" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/twitch.svg" alt="Twitch" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/twitch.svg" alt="Twitch" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/youtube.svg" alt="YouTube" />
+                        <img class="h-6 w-24" loading="lazy" src="/Logos/youtube.svg" alt="YouTube" />
                     </li>
                 </ul>
             </div>
@@ -138,7 +138,7 @@
             <div class="flex gap-x-4 sm:gap-x-8 pt-10 sm:pt-8 sm:pb-4 relative -translate-x-24   ">
                 <div v-for="image in images1" :key="image.img" class="">
                     <div class=" h-48 w-48 sm:h-56 sm:w-56 lg:h-64 lg:w-64  ">
-                        <img :src="image.img" :alt="image.alt" class=" rounded-lg  shadow-xl ">
+                        <img :src="image.img" :alt="image.alt" class=" rounded-lg  shadow-xl h-48 w-48 sm:h-56 sm:w-56 lg:h-64 lg:w-64">
                     </div>
 
                 </div>

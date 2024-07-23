@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
+    <div class="pt-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
       <div class="flex items-center justify-between px-6 sm:px-6 lg:px-0">
         <h2 class="font-bold text-4xl ">Unser Portfolio</h2>
         <a href="/portfolio" class="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
