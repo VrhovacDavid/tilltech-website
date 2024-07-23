@@ -10,33 +10,30 @@
               Verhandlungen, nur um am Ende unzufrieden zu sein. <strong>Frustrierend, oder?</strong></p>
             <h3 class="mt-10 text-xl font-bold">Erkennst du dich wieder?</h3>
             <dl class="mt-4 max-w-xl space-y-4 text-base leading-7 text-gray-600 lg:max-w-none">
-              <div v-for="feature in features" :key="feature.name">
-                <div class="flex items-center  gap-2">
-                  <img src="/Icons/Dot.svg" alt="Dot" class=" w-4 h-4">
-                  <dd>{{ feature.description }}</dd>
-                </div>
-
+              <div v-for="feature in features" :key="feature.name" class="flex items-start gap-2">
+                <dt class="flex-shrink-0 mt-1">
+                  <img src="/Icons/Dot.svg" alt="Dot" class="w-4 h-4" aria-hidden="true">
+                </dt>
+                <dd class="flex-grow">{{ feature.description }}</dd>
               </div>
-              <h3 class="mt-10 text-xl font-bold text-gray-900">Wir haben die Lösung!</h3>
             </dl>
+            <h3 class="mt-10 text-xl font-bold text-gray-900">Wir haben die Lösung!</h3>
+            <h3 class="mt-10 text-xl font-bold text-gray-900">Wir haben die Lösung!</h3>
             <p class="mt-4 text-gray-600">Alles an einem Ort. Stelle so viele Anfragen, wie du willst, und wir
               bearbeiten sie innerhalb von 1-2 Tagen. Kein lästiges Agentur-Hopping mehr. Pausiere oder kündige dein Abo
               nach Bedarf.
 
-              <strong class="text-gray-900"> <br /> Bedeutet für dich:</strong> Mehr Zeit fürs Wesentliche, weniger Stress und konstante,
+              <strong class="text-gray-900"> <br /> Bedeutet für dich:</strong> Mehr Zeit fürs Wesentliche, weniger
+              Stress und
+              konstante,
               hochwertige Ergebnisse für dein Business. Klingt gut, oder?
             </p>
 
 
           </div>
         </div>
-        <ModalVideo
-    :thumb="VideoThumb"
-    :thumbWidth="1920"
-    :thumbHeight="1080"
-    :video="VideoSrc"
-    :videoWidth="1920"
-    :videoHeight="1080" />
+        <ModalVideo :thumb="VideoThumb" :thumbWidth="1920" :thumbHeight="1080" :video="VideoSrc" :videoWidth="1920"
+          :videoHeight="1080" />
 
 
       </div>

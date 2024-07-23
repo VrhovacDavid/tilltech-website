@@ -49,79 +49,79 @@
                 <ul
                     class="flex   items-center justify-center  md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll  ">
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/adobe.svg" alt="Facebook" />
+                        <img class="h-6" loading="lazy" src="/Logos/adobe.svg" alt="Adobe" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/airbnb.svg" alt="Disney" />
+                        <img class="h-6" loading="lazy" src="/Logos/airbnb.svg" alt="AirBnb" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/calendly.svg" alt="Facebook" />
+                        <img class="h-6" loading="lazy" src="/Logos/calendly.svg" alt="Calendly" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/discord.svg" alt="Apple" />
+                        <img class="h-6" loading="lazy" src="/Logos/discord.svg" alt="Discord" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/github.svg" alt="Spark" />
+                        <img class="h-6" loading="lazy" src="/Logos/github.svg" alt="Github" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/google.svg" alt="Samsung" />
+                        <img class="h-6" loading="lazy" src="/Logos/google.svg" alt="Google" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/loom.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/loom.svg" alt="Loom" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/netflix.svg" alt="Sass" />
+                        <img class="h-6" loading="lazy" src="/Logos/netflix.svg" alt="Netflix" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/shopify.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/shopify.svg" alt="Shopify" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/spotify.svg" alt="Sass" />
+                        <img class="h-6" loading="lazy" src="/Logos/spotify.svg" alt="Spotify" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/twitch.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/twitch.svg" alt="Twitch" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/youtube.svg" alt="Sass" />
+                        <img class="h-6" loading="lazy" src="/Logos/youtube.svg" alt="YouTube" />
                     </li>
                 </ul>
                 <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
                     aria-hidden="true">
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/adobe.svg" alt="Facebook" />
+                        <img class="h-6" loading="lazy" src="/Logos/adobe.svg" alt="Adobe" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/airbnb.svg" alt="Disney" />
+                        <img class="h-6" loading="lazy" src="/Logos/airbnb.svg" alt="AirBnb" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/calendly.svg" alt="Facebook" />
+                        <img class="h-6" loading="lazy" src="/Logos/calendly.svg" alt="Calendly" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/discord.svg" alt="Apple" />
+                        <img class="h-6" loading="lazy" src="/Logos/discord.svg" alt="Discord" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/github.svg" alt="Spark" />
+                        <img class="h-6" loading="lazy" src="/Logos/github.svg" alt="Github" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/google.svg" alt="Samsung" />
+                        <img class="h-6" loading="lazy" src="/Logos/google.svg" alt="Google" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/loom.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/loom.svg" alt="Loom" />
                     </li>
                     <li>
-                        <img class="h-6" src="/Logos/netflix.svg" alt="Sass" />
+                        <img class="h-6" loading="lazy" src="/Logos/netflix.svg" alt="Netflix" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/shopify.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/shopify.svg" alt="Shopify" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/spotify.svg" alt="Sass" />
+                        <img class="h-6" loading="lazy" src="/Logos/spotify.svg" alt="Spotify" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/twitch.svg" alt="Quora" />
+                        <img class="h-6" loading="lazy" src="/Logos/twitch.svg" alt="Twitch" />
                     </li>
                     <li>
-                        <img class="h-6" loading="lazy" src="/Logos/youtube.svg" alt="Sass" />
+                        <img class="h-6" loading="lazy" src="/Logos/youtube.svg" alt="YouTube" />
                     </li>
                 </ul>
             </div>
@@ -177,23 +177,23 @@
 const images1 = [
     {
         img: "https://backend.dv-it.ch/wp-content/uploads/2024/06/Brutalism.png"
-        , alt: "Test"
+        , alt: "Brutalism"
     },
     {
         img: "https://backend.dv-it.ch/wp-content/uploads/2024/06/Nike.png"
-        , alt: "Test"
+        , alt: "Nike"
     },
     {
         img: "https://backend.dv-it.ch/wp-content/uploads/2024/06/Valentino3D.webp"
-        , alt: "Test"
+        , alt: "Valentino"
     },
     {
         img: "https://backend.dv-it.ch/wp-content/uploads/2024/06/Yamah3D.webp"
-        , alt: "Test"
+        , alt: "Yamaha"
     },
     {
         img: "https://backend.dv-it.ch/wp-content/uploads/2024/06/Keypad3D.webp"
-        , alt: "Test"
+        , alt: "Keypad"
     },
 ]
 
@@ -201,24 +201,24 @@ const images1 = [
 const images2 = [
     {
         img: "https://backend.dv-it.ch/wp-content/uploads/2024/06/AudientEvo43D.webp"
-        , alt: "Test"
+        , alt: "Audient"
     },
     {
         img: "https://backend.dv-it.ch/wp-content/uploads/2024/06/AppleWatch3D.webp"
 
-        , alt: "Test"
+        , alt: "Apple Watch"
     },
     {
         img: "https://backend.dv-it.ch/wp-content/uploads/2024/06/dadfe2195591609.6610075d76daa.jpg"
-        , alt: "Test"
+        , alt: "Audient"
     },
     {
         img: "https://backend.dv-it.ch/wp-content/uploads/2024/06/Yamah3D.webp"
-        , alt: "Test"
+        , alt: "Yamaha"
     },
     {
         img: "https://backend.dv-it.ch/wp-content/uploads/2024/06/Keypad3D.webp"
-        , alt: "Test"
+        , alt: "Keypad"
     },
 ]
 
