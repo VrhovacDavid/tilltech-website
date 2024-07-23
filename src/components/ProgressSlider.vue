@@ -116,7 +116,7 @@ watch(active, () => {
               </div>
 
               <span class="block text-sm text-start font-medium text-slate-900 mb-2">{{ item.desc }}</span>
-              <span class="block relative w-full bg-slate-200 h-1 rounded-full" role="progressbar" name="progressbar"
+              <span class="block relative w-full bg-slate-200 h-1 rounded-full" role="progressbar" aria-label="progressbar"
                 :aria-valuenow="active === index ? progress : 0" aria-valuemin="0" aria-valuemax="100">
                 <span class="absolute inset-0 bg-indigo-500 rounded-[inherit]"
                   :style="`${active === index ? `width: ${progress}%` : 'width: 0%'}`"></span>

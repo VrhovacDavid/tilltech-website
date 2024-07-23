@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="carousel-indicators ">
-      <button name="Slider Dot" v-for="(slide, index) in slides" :key="index" @click="goToSlide(index)"
+      <button role="button" aria-label="Slider Dot" v-for="(slide, index) in slides" :key="index" @click="goToSlide(index)"
         :class="{ active: currentSlide === index }" class="indicator-dot"></button>
     </div>
   </div>
