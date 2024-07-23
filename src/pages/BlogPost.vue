@@ -55,7 +55,7 @@ fetchPost(route.params.id);
             <div class=" py-20 sm:py-24 background-gradient">
 
 
-                <h1 class="text-4xl sm:text-6xl text-white  font-black text-center">{{ post.title }}</h1>
+                <h1 class="text-4xl sm:text-5xl text-white  font-black text-center">{{ post.title }}</h1>
 
 
                 <div class="relative mt-2 flex justify-center items-center gap-x-2">
@@ -75,26 +75,7 @@ fetchPost(route.params.id);
 
 
 
-
-                <div class="mx-auto py-4 px-4">
-                    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center">
-                        <div class=" lg:px-0 lg:pr-4 lg:pt-4">
-                            <div class="mx-auto max-w-4xl lg:mx-0 lg:max-w-lg">
-
-                                <p class="mt-4" v-html="post.inhaltsverzeichniss"></p>
-
-
-                            </div>
-                        </div>
-
-                        <img :src=post.img :alt=post.alt class=" rounded-xl  shadow-xl" />
-
-                    </div>
-                </div>
-
-
-
-
+                <img :src=post.img :alt=post.alt class=" rounded-xl mx-auto my-6   shadow-xl" />
 
 
 
