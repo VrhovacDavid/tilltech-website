@@ -18,7 +18,7 @@
               </div>
             </dl>
             <h3 class="mt-10 text-xl font-bold text-gray-900">Wir haben die Lösung!</h3>
-            <h3 class="mt-10 text-xl font-bold text-gray-900">Wir haben die Lösung!</h3>
+           
             <p class="mt-4 text-gray-600">Alles an einem Ort. Stelle so viele Anfragen, wie du willst, und wir
               bearbeiten sie innerhalb von 1-2 Tagen. Kein lästiges Agentur-Hopping mehr. Pausiere oder kündige dein Abo
               nach Bedarf.

@@ -15,7 +15,7 @@
 
 
 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-black text-white">
+                <h1 class="text-4xl leading-8 sm:leading-normal sm:text-5xl lg:text-6xl xl:text-6xl font-black text-white">
                     Mehr Zeit für dein eigenes Kerngeschäft
                 </h1>
                 <p class="block sm:hidden text-white my-2 text-sm sm:text-base">Mit unserem flexiblen Abo-Modell hast du

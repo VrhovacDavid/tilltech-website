@@ -31,9 +31,9 @@ const props = defineProps<Props>()
 
         <!-- Video thumbnail -->
         <button
-            class="relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
+            class="relative flex pb-4 justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
             @click="modalOpen = true" aria-label="Watch the video">
-            <img class="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out" :src="props.thumb"
+            <img class="rounded-3xl shadow-xl transition-shadow duration-300 ease-in-out" :src="props.thumb"
                 :width="props.thumbWidth" :height="props.thumbHeight" alt="Modal video thumbnail" />
             <!-- Play icon -->
             <svg class="absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out"

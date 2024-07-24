@@ -25,7 +25,7 @@
 
     <div class="border-2 background-gradient p-4  rounded-3xl flex flex-col justify-center items-center mx-4 shadow-xl">
       <img class="h-24 w-24 rounded-full my-2 " src="/Branding/David.webp" alt="">
-      <h3 class="text-xl sm:text-2xl font-black text-white">Buche ein 15 Minuten Intro Call</h3>
+      <h3 class="text-xl sm:text-2xl font-black text-center text-white">Buche ein 15 Minuten Intro Call</h3>
       <a href="https://calendly.com/tilltech/tilltech-infogesprach"
         class="my-4 bg-btn-black text-white block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Jetzt
         Call buchen</a>
