@@ -16,67 +16,44 @@
 
 
 
+                <div class="border-2 p-6 rounded-3xl background-gradient-black flex flex-col justify-between sm:h-[600px] h-[500px]">
+    <div class="flex flex-col gap-y-6">
+        <div class="flex w-48 justify-start items-center space-x-2 py-2.5 sm:py-4 bg-neutral-50/20 p-2 rounded-xl ring-1 ring-white">
+            <span class="relative flex h-3 w-3">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-100 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
+            </span>
+            <span class="text-white text-xs font-semibold">Wenig Plätze verfügbar</span>
+        </div>
+        <h3 class="text-4xl sm:text-5xl md:text-6xl font-black text-white">Jetzt TillTech beitreten</h3>
+    </div>
 
-
-                <div class="border-2 p-6 rounded-3xl background-gradient-black flex flex-col justify-between sm:h-[600px] h-[500px] ">
-
-                    <div class="flex flex-col gap-y-6">
-
-                        <div
-                            class="flex w-48 justify-start items-center space-x-2 py-2.5 sm:py-4 bg-neutral-50/20 p-2 rounded-xl ring-1 ring-white">
-
-                            <span class="relative flex h-3 w-3">
-                                <span
-                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-100 opacity-75"></span>
-                                <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
-                            </span>
-                            <span class="text-white text-xs font-semibold">Wenig Plätze verfügbar</span>
-
-                        </div>
-                        <h3 class="text-5xl sm:text-6xl font-black text-white">Jetzt TillTech beitreten</h3>
-                    </div>
-
-
-                    <div class="">
-
-                        <a href="https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07">
-                            <div
-                                class="flex  border-2 rounded-lg p-2 items-center gap-x-4 hover:bg-neutral-50/10 cursor-pointer  my-2">
-                                <div class="flex-flex-col ">
-                                    <h4 class="text-white font-black   sm:text-xl">Buche einen 15Min. Intro Call</h4>
-                                    <p class="text-xs sm:text-sm text-white">Erfahre mehr darüber, wie TillTech funktioniert und
-                                        wie
-                                        wir helfen können.
-                                    </p>
-
-                                </div>
-                                <div>
-                                    <img class="h-10 w-10" src="/Icons/Forward.svg" alt="">
-                                </div>
-
-                            </div>
-                        </a>
-
-                        <a href="https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07">
-                            <div
-                                class="flex  border-2 rounded-lg p-2 items-center gap-x-4 hover:bg-neutral-50/10 cursor-pointer my-2">
-                                <div class="flex-flex-col ">
-                                    <h4 class="text-white font-black  sm:text-xl">Empfiehl jemanden & verdiene</h4>
-                                    <p class=" text-xs sm:text-sm text-white">Verdiene 10% monatliche wiederkehrende Provisionen
-                                        für
-                                        jede Empfehlung.
-                                    </p>
-
-                                </div>
-                                <div>
-                                    <img class="h-10 w-10" src="/Icons/Forward.svg" alt="">
-                                </div>
-
-                            </div>
-                        </a>
-
-                    </div>
+    <div class="mt-4 sm:mt-6 md:mt-8"> <!-- Added margin-top here -->
+        <a href="https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07">
+            <div class="flex border-2 rounded-lg p-2 items-center gap-x-4 hover:bg-neutral-50/10 cursor-pointer my-2">
+                <div class="flex-flex-col">
+                    <h4 class="text-white font-black sm:text-xl">Buche einen 15Min. Intro Call</h4>
+                    <p class="text-xs sm:text-sm text-white">Erfahre mehr darüber, wie TillTech funktioniert und wie wir helfen können.</p>
                 </div>
+                <div>
+                    <img class="h-10 w-10" src="/Icons/Forward.svg" alt="">
+                </div>
+            </div>
+        </a>
+
+        <a href="https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07">
+            <div class="flex border-2 rounded-lg p-2 items-center gap-x-4 hover:bg-neutral-50/10 cursor-pointer my-2">
+                <div class="flex-flex-col">
+                    <h4 class="text-white font-black  sm:text-xl">Empfiehl jemanden & verdiene</h4>
+                    <p class="text-xs sm:text-sm text-white">Verdiene 10% monatliche wiederkehrende Provisionen für jede Empfehlung.</p>
+                </div>
+                <div>
+                    <img class="h-10 w-10" src="/Icons/Forward.svg" alt="">
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
 
                 <div v-for="tier in tiers" :key="tier.id" class="shadow-lg bg-white"
                     :class="[tier.featured ? 'bg-gray-900 ring-gray-900' : 'ring-gray-200', 'rounded-3xl p-8 ring-1 xl:p-10']">

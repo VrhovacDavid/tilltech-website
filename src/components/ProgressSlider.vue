@@ -74,20 +74,17 @@ watch(active, () => {
 
   <div class="max-w-7xl mt-12 py-6 sm:py-12  mx-auto flex flex-col  sm:flex-row items-center">
 
-    <div class="px-6 py- w-full justify-center  flex -order-first sm:order-first ">
-      <div class="transition-all duration-150 delay-300 ease-in-out">
-        <div class="relative flex flex-col ">
-
+    <div class="px-6 py-6 w-full flex justify-center -order-first sm:order-first">
+      <div class="transition-all duration-150 delay-300 ease-in-out w-full max-w-[500px]">
+        <div class="relative aspect-video max-h-[500px] overflow-hidden rounded-xl">
           <template :key="index" v-for="(item, index) in items">
             <TransitionRoot :show="active === index" enter="transition ease-in-out duration-500 delay-200 order-first"
               enterFrom="opacity-0 scale-105" enterTo="opacity-100 scale-100"
               leave="transition ease-in-out duration-300 absolute" leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95">
-              <img class="rounded-xl h-full w-full" :src="item.img" :alt="item.title"
-                loading="lazy">
+              <img class="absolute inset-0 w-full h-full object-cover" :src="item.img" :alt="item.title" loading="lazy">
             </TransitionRoot>
           </template>
-
         </div>
       </div>
     </div>
@@ -116,8 +113,9 @@ watch(active, () => {
               </div>
 
               <span class="block text-sm text-start font-medium text-slate-900 mb-2">{{ item.desc }}</span>
-              <span class="block relative w-full bg-slate-200 h-1 rounded-full" role="progressbar" aria-label="progressbar"
-                :aria-valuenow="active === index ? progress : 0" aria-valuemin="0" aria-valuemax="100">
+              <span class="block relative w-full bg-slate-200 h-1 rounded-full" role="progressbar"
+                aria-label="progressbar" :aria-valuenow="active === index ? progress : 0" aria-valuemin="0"
+                aria-valuemax="100">
                 <span class="absolute inset-0 bg-indigo-500 rounded-[inherit]"
                   :style="`${active === index ? `width: ${progress}%` : 'width: 0%'}`"></span>
               </span>
