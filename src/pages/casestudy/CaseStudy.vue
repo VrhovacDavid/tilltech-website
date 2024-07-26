@@ -57,7 +57,6 @@
 
 
 
-              
                 <p class=" markdown-body" v-html="bodyHtml"></p>
               </div>
             </div>
@@ -66,7 +65,8 @@
             <div class="mx-auto w-full max-w-[340px] aspect-square sm:max-w-[500px] lg:sticky lg:top-4">
               <div class="h-full w-full p-3 rounded-2xl background-gradient flex flex-col justify-between items-center">
                 <img class="rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 w-full h-3/5 object-cover"
-                  src="https://images.axios.com/XxUDleoVWgA_CV8n0kNWbFgMigY=/253x0:2962x1524/1920x1080/2023/09/05/1693873498138.jpg" alt="Zoom Call" />
+                  src="https://images.axios.com/XxUDleoVWgA_CV8n0kNWbFgMigY=/253x0:2962x1524/1920x1080/2023/09/05/1693873498138.jpg"
+                  alt="Zoom Call" />
                 <div class="flex flex-col items-center justify-center flex-grow">
                   <h2 class="text-xl sm:text-3xl mt-2 mb-1 sm:my-3 font-bold tracking-tight text-white text-center">
                     Lass uns über dein Projekt reden
@@ -207,22 +207,22 @@ onUnmounted(() => {
 
 
 
-.markdown-body h1 {
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
+
+
 
 .markdown-body h2 {
-  font-size: 1.75em;
-  font-weight: bold;
+  font-size: 2.25em;
+  line-height: 2.5rem;
+  font-weight: black;
   margin-bottom: 0.5em;
 }
 
 .markdown-body h3 {
-  font-size: 1.4em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: black;
+  margin-top: 1.5rem;
+
 }
 
 .markdown-body h4 {
@@ -244,9 +244,7 @@ onUnmounted(() => {
 }
 
 .markdown-body p {
-  font-size: 1em;
-  line-height: 1.5;
-  margin-bottom: 1em;
+  margin-top: 0.5rem;
 }
 
 .markdown-body ul {
@@ -303,7 +301,8 @@ onUnmounted(() => {
   margin-bottom: 1em;
 }
 
-.markdown-body th, .markdown-body td {
+.markdown-body th,
+.markdown-body td {
   padding: 8px 12px;
   border: 1px solid #ccc;
   text-align: left;
@@ -324,7 +323,7 @@ onUnmounted(() => {
 }
 
 .markdown-body .tool {
-  
+
   margin-top: 10px;
 }
 
@@ -337,6 +336,4 @@ onUnmounted(() => {
   color: red;
   margin-left: 10px;
 }
-
-
 </style>
