@@ -57,8 +57,8 @@
 
 
 
-                <h3 class="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Case Study</h3>
-                <p class="mt-4 text-lg leading-2 text-gray-700">{{ casestudy.introtext }}</p>
+              
+                <p class=" markdown-body" v-html="bodyHtml"></p>
               </div>
             </div>
           </div>
@@ -79,15 +79,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div class="lg:pr-4">
-              <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                <p v-html="casestudy.workdescription"></p>
 
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -98,10 +90,32 @@
 </template>
 
 <script setup>
-import { reactive, ref, onMounted, onUnmounted } from 'vue';
+import { marked } from 'marked';
+import { reactive, ref, onMounted, onUnmounted, computed } from 'vue';
 import { casestudy } from '../../components/store';
 import supabase from '../../lib/supabase';
 import { useRoute } from 'vue-router';
+
+marked.setOptions({
+  breaks: true,
+  renderer: new marked.Renderer()
+});
+
+const renderer = {
+  paragraph(text) {
+    return text;
+  }
+};
+
+marked.use({ renderer });
+
+const post = reactive({});
+
+const bodyHtml = computed(() => {
+  return marked(casestudy.body || '');
+});
+
+
 
 const route = useRoute();
 let singlecase = reactive({});
@@ -189,4 +203,140 @@ onUnmounted(() => {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+
+
+
+.markdown-body h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body h2 {
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body h6 {
+  font-size: 0.875em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+
+.markdown-body li {
+  margin-bottom: 0.5em;
+}
+
+.markdown-body a {
+  color: #9d00b8;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 20px;
+  margin-left: 0;
+  font-style: italic;
+  color: #666;
+}
+
+.markdown-body code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.markdown-body pre {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.markdown-body th, .markdown-body td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.markdown-body th {
+  background-color: #f4f4f4;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown-body .intro {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.markdown-body .tool {
+  
+  margin-top: 10px;
+}
+
+.markdown-body .advantages {
+  color: green;
+  margin-left: 10px;
+}
+
+.markdown-body .disadvantages {
+  color: red;
+  margin-left: 10px;
+}
+
+
 </style>
