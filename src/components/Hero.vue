@@ -10,12 +10,14 @@
             <div class="text-left z-10  px-4 max-w-4xl  flex-grow flex-col flex items-start justify-center">
 
 
-                <img class="hidden md:block h-20 -m-2 lg:h-12 xl:h-24" src="/Success/GoogleReviews.webp" alt="Google Bewertungen">
+                <img class="hidden md:block h-20 -m-2 lg:h-12 xl:h-24" src="/Success/GoogleReviews.webp"
+                    alt="Google Bewertungen">
 
 
 
 
-                <h1 class="text-4xl leading-8 sm:leading-normal sm:text-5xl lg:text-6xl xl:text-6xl font-black text-white">
+                <h1
+                    class="text-4xl leading-8 sm:leading-normal sm:text-5xl lg:text-6xl xl:text-6xl font-black text-white">
                     Mehr Zeit für dein eigenes Kerngeschäft
                 </h1>
                 <p class="block sm:hidden text-white my-2 text-sm sm:text-base">Mit unserem flexiblen Abo-Modell hast du
@@ -29,7 +31,8 @@
                         class="text-sm  sm:text-base px-4 font-bold bg-btn-black shadow-lg shadow-white/20 rounded-full py-2 text-white">
                         Projekt Starten
                     </a>
-                    <a href="https://calendly.com/tilltech/tilltech-infogesprach" class="text-sm  sm:text-base px-4 font-medium leading-6 py-2 text-white"> oder
+                    <a href="https://calendly.com/tilltech/tilltech-infogesprach"
+                        class="text-sm  sm:text-base px-4 font-medium leading-6 py-2 text-white"> oder
                         Call buchen
                     </a>
 
@@ -138,7 +141,8 @@
             <div class="flex gap-x-4 sm:gap-x-8 pt-10 sm:pt-8 sm:pb-4 relative -translate-x-24   ">
                 <div v-for="image in images1" :key="image.img" class="">
                     <div class=" h-48 w-48 sm:h-56 sm:w-56 lg:h-64 lg:w-64  ">
-                        <img :src="image.img" :alt="image.alt" class=" rounded-lg  shadow-xl h-48 w-48 sm:h-56 sm:w-56 lg:h-64 lg:w-64">
+                        <img :src="image.img" :alt="image.alt"
+                            class=" rounded-lg  shadow-xl h-48 w-48 sm:h-56 sm:w-56 lg:h-64 lg:w-64">
                     </div>
 
                 </div>
@@ -151,7 +155,8 @@
             <div class="flex gap-x-4 sm:gap-x-8  py-4 relative -translate-x-12  ">
                 <div v-for="image in images2" :key="image.img" loading="lazy">
                     <div class="h-48 w-48 sm:h-56 sm:w-56 lg:h-64 lg:w-64">
-                        <img :src="image.img" :alt="image.alt" class="h-48 w-48 sm:h-56 sm:w-56 lg:h-64 lg:w-64 rounded-lg  shadow-xl " loading="lazy">
+                        <img :src="image.img" :alt="image.alt"
+                            class="h-48 w-48 sm:h-56 sm:w-56 lg:h-64 lg:w-64 rounded-lg  shadow-xl " loading="lazy">
                     </div>
                 </div>
             </div>
@@ -204,7 +209,7 @@ const images2 = [
         , alt: "Audient"
     },
     {
-        img: "https://backend.dv-it.ch/wp-content/uploads/2024/06/AppleWatch3D.webp"
+        img: "https://backend.dv-it.ch/wp-content/uploads/2024/07/AppleWatch-Thumbnail.webp"
 
         , alt: "Apple Watch"
     },

@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto  lg:text-center">
 
-        <h3 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Es war noch nie so einfach!</h3>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Es war noch nie so einfach!</h2>
         <p class="mt-6 text-lg leading-8 text-gray-600">Geniesse die Freiheit, dich auf dein Geschäft zu konzentrieren, während wir uns um deine kreativen Bedürfnisse kümmern.</p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
