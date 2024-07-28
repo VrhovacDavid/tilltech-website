@@ -7,83 +7,87 @@
 
 
 
-    <div class="h-[500px] background-gradient flex flex-col justify-center items-start px-4">
-      <h1 class="p-2 bg-neutral-50/20 my-2  rounded-lg border-2 text-xs border-white text-white">{{ casestudy.seo }}
-      </h1>
-      <h2 class="text-4xl font-black text-white">{{ casestudy.title }}</h2>
-      <p class="text-white">{{ casestudy.description }}</p>
-      <div class="flex gap-4 py-2 items-center ">
-        <p class="p-2 bg-neutral-50/20  rounded-lg border-2 border-white text-white text-xs">{{ casestudy.price }}</p>
-        <p class="p-2 bg-neutral-50/20  rounded-lg border-2 border-white text-white text-xs">{{ casestudy.time }}</p>
-        <img class="bg-neutral-50/20 h-10 w-10 p-2 rounded-lg border-2 border-white text-xs" :src=casestudy.tools1
-          alt="">
-        <img class="bg-neutral-50/20 h-10 w-10 p-2 rounded-lg border-2 border-white text-xs" :src=casestudy.tools2
-          alt="">
+    <div class="h-[500px] background-gradient  flex flex-col justify-center items-start px-4">
+     
+        <h1 class="p-2 bg-neutral-50/20 my-4  rounded-lg border-2 text-xs border-white text-white">{{ casestudy.seo }}
+        </h1>
+        <div class="max-w-4xl">
+        <h2 class="text-4xl font-black text-white mb-2">{{ casestudy.title }}</h2>
+        <p class="text-white">{{ casestudy.description }}</p>
+        <div class="flex gap-4 py-4 sm:pb-6 items-center ">
+          <p class="p-2 bg-neutral-50/20  rounded-lg border-2 border-white text-white text-xs">{{ casestudy.price }}</p>
+          <p class="p-2 bg-neutral-50/20  rounded-lg border-2 border-white text-white text-xs">{{ casestudy.time }}</p>
+          <img class="bg-neutral-50/20 h-10 w-10 p-2 rounded-lg border-2 border-white text-xs" :src=casestudy.tools1
+            alt="">
+          <img class="bg-neutral-50/20 h-10 w-10 p-2 rounded-lg border-2 border-white text-xs" :src=casestudy.tools2
+            alt="">
 
+
+        </div>
+        <a href="/#pricing"
+          class="text-sm   sm:text-base px-6 font-bold bg-btn-black shadow-lg shadow-white/20 rounded-full py-2.5 text-white">
+          Projekt Starten </a>
 
       </div>
-      <a href="/#pricing"
-        class="text-sm my-2  sm:text-base px-4 font-bold bg-btn-black shadow-lg shadow-white/20 rounded-full py-2 text-white">
-        Projekt Starten </a>
-
     </div>
 
+      <!-- Indicator dots/bars -->
 
-    <!-- Indicator dots/bars -->
-
-    <div class="bg-primary">
-      <div class="relative z-10 -mt-12 px-1 sm:px-4">
-        <!-- Image slider -->
-        <div class="flex overflow-x-auto gap-x-6 scrollbar-hide" ref="slider">
-          <div v-for="(img, index) in images" :key="index" class="flex-shrink-0 w-[420px] sm:w-[640px]">
-            <img :src="img" :alt="`Image ${index + 1}`" class="object-contain rounded-xl shadow-xl">
-          </div>
-        </div>
-        <div class="flex justify-center sm:justify-start mt-4 gap-2">
-          <button v-for="(img, index) in images" :key="index" @click="scrollToImage(index)"
-            class="h-3 rounded-full transition-all duration-300 ease-in-out"
-            :class="[currentImageIndex === index ? 'w-10 background-gradient' : 'w-3 bg-gray-300 hover:bg-gray-400']">
-          </button>
-        </div>
-      </div>
-      <div class="relative  overflow-hidden bg-primary px-6 py-12 sm:py-32 lg:overflow-visible lg:px-0">
-
-        <div
-          class="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-6 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-          <div
-            class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div class="lg:pr-4">
-              <div class="lg:max-w-lg">
-
-
-
-                <p class=" markdown-body" v-html="bodyHtml"></p>
-              </div>
+      <div class="bg-primary">
+        <div class="relative z-10 -mt-12 px-1 sm:px-4">
+          <!-- Image slider -->
+          <div class="flex overflow-x-auto gap-x-6 scrollbar-hide" ref="slider">
+            <div v-for="(img, index) in images" :key="index" class="flex-shrink-0 w-full  sm:w-[800px]">
+              <img :src="img" :alt="`Image ${index + 1}`" class="object-contain rounded-xl shadow-xl">
             </div>
           </div>
-          <div class=" px-4 sm:p-8 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <div class="mx-auto w-full max-w-[340px] aspect-square sm:max-w-[500px] lg:sticky lg:top-4">
-              <div class="h-full w-full p-3 rounded-2xl background-gradient flex flex-col justify-between items-center">
-                <img class="rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 w-full h-3/5 object-cover"
-                  src="https://images.axios.com/XxUDleoVWgA_CV8n0kNWbFgMigY=/253x0:2962x1524/1920x1080/2023/09/05/1693873498138.jpg"
-                  alt="Zoom Call" />
-                <div class="flex flex-col items-center justify-center flex-grow">
-                  <h2 class="text-xl sm:text-3xl mt-2 mb-1 sm:my-3 font-bold tracking-tight text-white text-center">
-                    Lass uns über dein Projekt reden
-                  </h2>
-                  <a href="https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07"
-                    class="text-sm px-4 font-bold bg-btn-black shadow-lg shadow-white/20 rounded-full py-2 text-white">
-                    Gratis Call Buchen
-                  </a>
+          <div class="flex justify-center sm:justify-start mt-4 gap-2">
+            <button v-for="(img, index) in images" :key="index" @click="scrollToImage(index)"
+              class="h-3 rounded-full transition-all duration-300 ease-in-out"
+              :class="[currentImageIndex === index ? 'w-10 background-gradient' : 'w-3 bg-gray-300 hover:bg-gray-400']">
+            </button>
+          </div>
+        </div>
+        <div class="relative  overflow-hidden bg-primary px-4 py-12 sm:py-32 lg:overflow-visible lg:px-0">
+
+          <div
+            class="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-6 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+            <div
+              class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+              <div class="lg:pr-4">
+
+
+
+
+                <p class=" markdown-body " v-html="bodyHtml"></p>
+
+
+              </div>
+            </div>
+            <div class=" px-4 sm:p-8 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+              <div class="mx-auto w-full max-w-[340px] aspect-square sm:max-w-[500px] lg:sticky lg:top-4">
+                <div
+                  class="h-full w-full p-3 rounded-2xl background-gradient flex flex-col justify-between items-center">
+                  <img class="rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 w-full h-3/5 object-cover"
+                    src="https://images.axios.com/XxUDleoVWgA_CV8n0kNWbFgMigY=/253x0:2962x1524/1920x1080/2023/09/05/1693873498138.jpg"
+                    alt="Zoom Call" />
+                  <div class="flex flex-col items-center justify-center flex-grow">
+                    <h2 class="text-xl sm:text-3xl mt-2 mb-1 sm:my-3 font-bold tracking-tight text-white text-center">
+                      Lass uns über dein Projekt reden
+                    </h2>
+                    <a href="https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07"
+                      class="text-sm px-6 font-bold bg-btn-black shadow-lg shadow-white/20 rounded-full py-2.5 text-white">
+                      Gratis Call Buchen
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
 
@@ -206,134 +210,68 @@ onUnmounted(() => {
 
 
 
-
-
-
+.markdown-body h1 {
+  font-size: 2.25rem !important;
+  padding-top: 2em;
+  line-height: 2.5rem !important;
+  font-weight: 900 !important;
+  padding-bottom: 4em;
+  margin-bottom: 4em;
+  color: #141414;
+}
 
 .markdown-body h2 {
-  font-size: 2.25em;
-  line-height: 2.5rem;
-  font-weight: black;
-  margin-bottom: 0.5em;
+  font-size: 2.25rem !important;
+  line-height: 2.5rem !important;
+  font-weight: 900 !important;
+  color: #141414;
 }
 
 .markdown-body h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: black;
+  font-size: 1.75rem !important;
+  line-height: 1.8rem !important;
+  font-weight: 800 !important;
   margin-top: 1.5rem;
-
+  color: #141414;
 }
 
 .markdown-body h4 {
-  font-size: 1.25em;
-  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-weight: 600;
   margin-bottom: 0.5em;
-}
-
-.markdown-body h5 {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-
-.markdown-body h6 {
-  font-size: 0.875em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-
-.markdown-body p {
-  margin-top: 0.5rem;
-}
-
-.markdown-body ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  margin-bottom: 1em;
-}
-
-.markdown-body ol {
-  list-style-type: decimal;
-  margin-left: 20px;
-  margin-bottom: 1em;
-}
-
-.markdown-body li {
-  margin-bottom: 0.5em;
-}
-
-.markdown-body a {
-  color: #9d00b8;
-  text-decoration: none;
-}
-
-.markdown-body a:hover {
-  text-decoration: underline;
-}
-
-.markdown-body blockquote {
-  border-left: 4px solid #ccc;
-  padding-left: 20px;
-  margin-left: 0;
-  font-style: italic;
   color: #666;
 }
 
-.markdown-body code {
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #f4f4f4;
-  padding: 2px 4px;
-  border-radius: 4px;
+.markdown-body h5 {
+  font-size: 1.25em;
+  line-height: 1.6;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  color: #777;
 }
 
-.markdown-body pre {
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #f4f4f4;
-  padding: 10px;
-  border-radius: 4px;
-  overflow-x: auto;
+.markdown-body h6 {
+  font-size: 1.1em;
+  line-height: 1.6;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  color: #888;
 }
 
-.markdown-body table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1em;
-}
+.markdown-body p {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  padding-bottom: 0.5rem !important;
 
-.markdown-body th,
-.markdown-body td {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  text-align: left;
-}
 
-.markdown-body th {
-  background-color: #f4f4f4;
 }
 
 .markdown-body img {
   max-width: 100%;
   height: auto;
-}
-
-.markdown-body .intro {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.markdown-body .tool {
-
-  margin-top: 10px;
-}
-
-.markdown-body .advantages {
-  color: green;
-  margin-left: 10px;
-}
-
-.markdown-body .disadvantages {
-  color: red;
-  margin-left: 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1em 0;
 }
 </style>
