@@ -6,6 +6,13 @@ export default {
   ],
   theme: {
     extend: {
+
+      textColor:{
+        'headings':'#322261',
+        'paragraphs':'#302457',
+        'highlights':'#62668A',
+      },
+
       lineHeight: {
         'h1': '4.5rem',
         'h2': '3.75rem',

@@ -22,7 +22,7 @@
       <div class="flex flex-wrap gap-4 py-2 items-center justify-center  ">
         <button v-for="category in categories" :key="category" @click="currentFilter = category" :class="{
           'background-gradient text-white': currentFilter === category,
-          'bg-gray-400/20 text-mobile-bodySM rounded-lg text-gray-600': currentFilter !== category
+          'bg-gray-400/20 text-mobile-bodySM rounded-lg text-paragraphs': currentFilter !== category
         }" class="px-4 py-2 text-mobile-bodySM rounded-xl font-medium">
           {{ category }}
         </button>
@@ -46,14 +46,14 @@
             <img :src="item.img" :alt="item.alt" class="h-full w-full object-cover object-center" />
           </div>
           <div class="mt-4 text-center">
-            <h3 class="text-mobile-body text-gray-500">
+            <h3 class="text-mobile-body text-highlights">
               <a :href="item.href">
                 <span aria-hidden="true" class="absolute inset-0" />
                 {{ item.shortdescription }}
               </a>
             </h3>
 
-            <p class="mt-1 font-semibold text-mobile-bodyLG text-gray-900">{{ item.title }}</p>
+            <p class="mt-1 font-semibold text-mobile-bodyLG text-paragraphs">{{ item.title }}</p>
           </div>
         </div>
       </div>

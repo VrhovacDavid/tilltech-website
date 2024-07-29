@@ -2,8 +2,8 @@
   <div class="">
     <div class="pt-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
       <div class="flex items-center justify-between px-6 sm:px-6 lg:px-0">
-        <h2 class="font-black text-mobile-h2 ">Unser Portfolio</h2>
-        <a href="/portfolio" class="hidden text-mobile-body font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
+        <h2 class="font-black text-mobile-h2 text-headings ">Unser Portfolio</h2>
+        <a href="/portfolio" class="hidden text-mobile-body font-semibold text-headings hover:text-highlights sm:block">
           Alles anschauen
           <span aria-hidden="true"> &rarr;</span>
         </a>
@@ -23,8 +23,8 @@
                  
                 </div>
                 <div class="mt-6">
-                  <p class="text-mobile-body text-gray-500">{{ product.shortdescription }}</p>
-                  <h3 class="mt-1 font-semibold text-mobile-bodyLG text-gray-900">
+                  <p class="text-mobile-body text-highlights">{{ product.shortdescription }}</p>
+                  <h3 class="mt-1 font-semibold text-mobile-bodyLG text-paragraphs">
                     <a :href="`/casestudy/${product.slug}`">
                       <span class="absolute inset-0"></span>
                       {{ product.title }}
@@ -38,7 +38,7 @@
       </div>
 
       <div class="mt-12 flex px-4 sm:hidden">
-        <a href="/portfolio" class="text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+        <a href="/portfolio" class="text-sm font-semibold text-highlights hover:text-headings">
         Alles anschauen
           <span aria-hidden="true"> &rarr;</span>
         </a>

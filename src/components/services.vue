@@ -18,8 +18,8 @@
       </div>
       <div class="w-full sm:pl-6">
         <div class="flex flex-col items-start justify-center">
-          <h2 class="font-black text-mobile-h2  my-4">Unsere Dienstleistungen</h2>
-          <p class="text-mobile-body sm:text-base">
+          <h2 class="font-black text-mobile-h2  my-4 text-headings">Unsere Dienstleistungen</h2>
+          <p class="text-mobile-body sm:text-base text-paragraphs">
             Unser flexibles Kreativabo bietet dir eine umfassende Palette an Dienstleistungen, die perfekt
             auf die Bedürfnisse deines Unternehmens abgestimmt sind. Wir kombinieren erstklassiges
             Grafikdesign, effektives Marketing, moderne Entwicklung und professionelle Content Creation in

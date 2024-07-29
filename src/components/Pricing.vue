@@ -3,11 +3,11 @@
         <div class="mx-auto max-w-5xl px-4 lg:px-8">
             <div class="mx-auto max-w-7xl text-start">
 
-                <h2 class="mt-2 text-mobile-h2 leading-mobile-h2 font-black tracking-tight text-gray-900 sm:text-5xl">Unsere Flexiblen Preispläne
+                <h2 class="mt-2 text-mobile-h2 leading-mobile-h2 font-black tracking-tight text-headings sm:text-5xl">Unsere Flexiblen Preispläne
                 </h2>
 
             </div>
-            <p class="mx-auto mt-6 max-w-2xl text-start text-mobile-bodyLG leading-mobile-bodyLG text-gray-600">Wir wissen, wie schnell sich
+            <p class="mx-auto mt-6 max-w-2xl text-start text-mobile-bodyLG leading-mobile-bodyLG text-highlights">Wir wissen, wie schnell sich
                 die Bedürfnisse eines Unternehmens ändern können. Deshalb bieten wir flexible Preispläne, die sich
                 deinem Business anpassen.
             </p>
@@ -57,7 +57,7 @@
 
                 <div v-for="tier in tiers" :key="tier.id" class="shadow-lg bg-white"
                     :class="[tier.featured ? 'bg-gray-900 ring-gray-900' : 'ring-gray-200', 'rounded-3xl p-8 ring-1 xl:p-10']">
-                    <h3 class="text-4xl font-black">Mitgliedschaft</h3>
+                    <h3 class="text-4xl font-black text-headings">Mitgliedschaft</h3>
 
 
                     <!-- Switch for selecting payment frequency -->
@@ -78,16 +78,16 @@
                     <!-- Display selected price based on frequency -->
                     <p class="mt-6 flex items-baseline gap-x-1">
                         <span
-                            :class="[tier.featured ? 'text-white' : 'text-gray-900', 'text-mobile-h1 font-black tracking-tight']">{{
+                            :class="[tier.featured ? 'text-white' : 'text-headings', 'text-mobile-h1 font-black tracking-tight']">{{
                                 typeof tier.price === 'string' ? tier.price : tier.price[frequency.value] }}</span>
                         <span v-if="typeof tier.price !== 'string'"
-                            :class="[tier.featured ? 'text-gray-300' : 'text-gray-600', 'text-mobile-body font-semibold leading-6']">{{
+                            :class="[tier.featured ? 'text-gray-300' : 'text-highlights', 'text-mobile-body font-semibold leading-6']">{{
                                 frequency.priceSuffix }}</span>
                     </p>
 
 
                     <ul role="list"
-                        :class="[tier.featured ? 'text-gray-300' : 'text-gray-600', 'mt-8 space-y-3 text-mobile-body leading-6 xl:mt-10']">
+                        :class="[tier.featured ? 'text-gray-300' : 'text-paragraphs', 'mt-8 space-y-3 text-mobile-body leading-6 xl:mt-10']">
                         <li v-for="feature in tier.features[frequency.value]" :key="feature" class="flex gap-x-3">
                             <CheckIcon :class="[tier.featured ? 'text-white' : 'text-indigo-600', 'h-6 w-5 flex-none']"
                                 aria-hidden="true" />

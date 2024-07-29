@@ -217,14 +217,14 @@ onUnmounted(() => {
   padding-top: 2em;
   padding-bottom: 4em;
   margin-bottom: 4em;
-  color: #141414;
+  color: #322261;
 }
 
 .markdown-body h2 {
   font-size: 1.75rem !important;
   line-height: 2.25rem !important;
   font-weight: 900 !important;
-  color: #141414;
+  color: #322261;
 }
 
 .markdown-body h3 {
@@ -232,7 +232,8 @@ onUnmounted(() => {
   line-height: 2rem !important;
   font-weight: 900 !important;
   margin-top: 1.5rem;
-  color: #141414;
+  color: #322261;
+
 }
 
 .markdown-body h4 {
@@ -263,6 +264,7 @@ onUnmounted(() => {
   font-size: 1rem !important;
   line-height: 1.5rem !important;
   padding-bottom: 0.5rem !important;
+  color: #302457;
 }
 
 @media (min-width: 1024px) {
