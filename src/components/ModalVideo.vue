@@ -31,7 +31,7 @@ const props = defineProps<Props>()
 
         <!-- Video thumbnail -->
         <button
-            class="relative flex pb-4 justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
+            class="relative flex mb-2 justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
             @click="modalOpen = true" aria-label="Watch the video">
             <img class="rounded-3xl shadow-xl transition-shadow duration-300 ease-in-out" :src="props.thumb"
                 :width="props.thumbWidth" :height="props.thumbHeight" alt="Modal video thumbnail" />

@@ -91,12 +91,12 @@ watch(active, () => {
 
 
     <div class=" w-full ">
-      <div class="px-6 sm:max-w-sm md:max-w-3xl mx-auto flex flex-col  gap-4 sm:my-8">
+      <div class="px-4 sm:max-w-sm md:max-w-3xl mx-auto flex flex-col  gap-6 sm:my-8">
 
 
 
 
-        <h2 class="font-black text-mobile-h2 text-headings">So funktioniert's!</h2>
+        <h2 class="font-black   text-mobile-h2 text-headings">So funktioniert's!</h2>
 
         <template :key="index" v-for="(item, index) in items">
 
