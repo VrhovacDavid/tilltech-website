@@ -6,53 +6,53 @@
         <div class="grid grid-cols-2 gap-8 xl:col-span-2">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm font-semibold leading-6 text-white">Nützliche Links</h3>
-              <ul role="list" class="mt-6 space-y-4">
+              <h3 class="text-mobile-body font-bold text-white">Nützliche Links</h3>
+              <ul role="list" class="mt-6 space-y-2">
                 <li v-for="item in navigation.solutions" :key="item.name">
-                  <a :href="item.href" class="text-sm leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
+                  <a :href="item.href" class="text-mobile-bodySM leading-mobile-bodySM text-gray-300 hover:text-white">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-white">Meine Links</h3>
-              <ul role="list" class="mt-6 space-y-4">
+              <h3 class="text-mobile-body font-bold  text-white">Meine Links</h3>
+              <ul role="list" class="mt-6 space-y-2">
                 <li v-for="item in navigation.support" :key="item.name">
-                  <a :href="item.href" class="text-sm leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
+                  <a :href="item.href" class="text-mobile-bodySM leading-mobile-bodySM text-gray-300 hover:text-white">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm font-semibold leading-6 text-white">Für Kunden</h3>
-              <ul role="list" class="mt-6 space-y-4">
+              <h3 class="text-mobile-body font-bold text-white">Für Kunden</h3>
+              <ul role="list" class="mt-6 space-y-2">
                 <li v-for="item in navigation.company" :key="item.name">
-                  <a :href="item.href" class="text-sm leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
+                  <a :href="item.href" class="text-mobile-bodySM leading-mobile-bodySM text-gray-300 hover:text-white">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
-              <ul role="list" class="mt-6 space-y-4">
+              <h3 class="text-mobile-body font-bold leading-6 text-white">Legal</h3>
+              <ul role="list" class="mt-6 space-y-2">
                 <li v-for="item in navigation.legal" :key="item.name">
-                  <a :href="item.href" class="text-sm leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
+                  <a :href="item.href" class="text-mobile-bodySM leading-mobile-bodySM text-gray-300 hover:text-white">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <div class="mt-10 xl:mt-0">
-          <h3 class="text-sm font-semibold leading-6 text-white">Melde dich für unseren Newsletter an</h3>
-          <p class="mt-2 text-sm leading-6 text-gray-300">Die neuesten Nachrichten, Artikel und Ressourcen, wöchentlich
+          <h3 class="text-mobile-body font-bold text-white">Melde dich für unseren Newsletter an</h3>
+          <p class="mt-2 text-mobile-bodySM leading-mobile-bodySM  text-gray-300">Die neuesten Nachrichten, Artikel und Ressourcen, wöchentlich
             in deinem Posteingang.</p>
           <form class="mt-6 sm:flex sm:max-w-md">
             <label for="email-address" class="sr-only">Email addresse</label>
             <input type="email" name="email-address" id="email-address" autocomplete="email" required=""
-              class="w-full min-w-0 appearance-none rounded-md border-0 bg-white/20 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-white/50 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+              class="w-full min-w-0 appearance-none rounded-md border-0 bg-white/20 px-3 py-1.5 text-mobile-bodySM text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-white/50 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
               placeholder="Gib deine E-Mail Adresse ein" />
             <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
               <button type="submit"
-                class="flex w-full items-center justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Anmelden</button>
+                class="flex w-full items-center justify-center rounded-md bg-indigo-500 px-3 py-2 text-mobile-bodyLG font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Anmelden</button>
             </div>
           </form>
         </div>
