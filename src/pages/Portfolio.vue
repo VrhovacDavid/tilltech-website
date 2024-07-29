@@ -46,14 +46,14 @@
             <img :src="item.img" :alt="item.alt" class="h-full w-full object-cover object-center" />
           </div>
           <div class="mt-4 text-center">
-            <h3 class="text-mobile-body text-highlights">
+            <h3 class="text-mobile-bodySM text-highlights">
               <a :href="item.href">
                 <span aria-hidden="true" class="absolute inset-0" />
                 {{ item.shortdescription }}
               </a>
             </h3>
 
-            <p class="mt-1 font-semibold text-mobile-bodyLG text-paragraphs">{{ item.title }}</p>
+            <p class="mt-1 font-semibold text-mobile-body text-paragraphs">{{ item.title }}</p>
           </div>
         </div>
       </div>

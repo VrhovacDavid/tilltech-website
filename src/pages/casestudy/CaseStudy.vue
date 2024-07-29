@@ -7,16 +7,16 @@
 
 
 
-    <div class="h-[500px] background-gradient  flex flex-col justify-center items-start px-4">
+    <div class="h-[600px] background-gradient  flex flex-col justify-center items-start px-4">
 
       <h1
         class="p-2 bg-neutral-50/20 my-4  rounded-lg border-2 text-mobile-bodySM leading-mobile-bodySm border-white text-white">
         {{ casestudy.seo }}
       </h1>
       <div class="max-w-4xl">
-        <h2 class="text-mobile-h1 leading-mobile-h1 font-black text-white mb-2">{{ casestudy.title }}</h2>
-        <p class="text-white text-mobile-body leading-mobile-body">{{ casestudy.description }}</p>
-        <div class="flex gap-4 pb-6 pt-2 sm:pb-6 items-center ">
+        <h2 class="text-mobile-h1 leading-mobile-h1 font-black text-white mb-2" v-html="casestudy.casetitle"></h2>
+        <p class="text-white text-mobile-body leading-mobile-body" v-html="casestudy.description"></p>
+        <div class="flex gap-4 pb-6 pt-4 sm:pb-6 items-center ">
           <p class="p-2 bg-neutral-50/20  rounded-lg border-2 border-white text-white text-xs">{{ casestudy.price }}</p>
           <p class="p-2 bg-neutral-50/20  rounded-lg border-2 border-white text-white text-xs">{{ casestudy.time }}</p>
           <img class="bg-neutral-50/20 h-10 w-10 p-2 rounded-lg border-2 border-white text-xs" :src=casestudy.tools1
@@ -36,11 +36,11 @@
     <!-- Indicator dots/bars -->
 
     <div class="bg-primary">
-      <div class="relative z-10 -mt-12 px-1 sm:px-4">
+      <div class="relative z-10 -mt-12 px-1 sm:px-4 ">
         <!-- Image slider -->
-        <div class="flex overflow-x-auto gap-x-6 scrollbar-hide" ref="slider">
+        <div class="flex overflow-x-auto gap-x-6 scrollbar-hide pb-4" ref="slider">
           <div v-for="(img, index) in images" :key="index" class="flex-shrink-0 w-full  sm:w-[800px]">
-            <img :src="img" :alt="`Image ${index + 1}`" class="object-contain rounded-xl shadow-xl">
+            <img :src="img" :alt="`Image ${index + 1}`" class="object-contain rounded-xl shadow-lg">
           </div>
         </div>
         <div class="flex justify-center sm:justify-start mt-4 gap-2">
@@ -73,7 +73,8 @@
                   src="https://images.axios.com/XxUDleoVWgA_CV8n0kNWbFgMigY=/253x0:2962x1524/1920x1080/2023/09/05/1693873498138.jpg"
                   alt="Zoom Call" />
                 <div class="flex flex-col items-center justify-center flex-grow">
-                  <h2 class="text-mobile-h3  leading-mobile-h3  font-black sm:text-3xl mt-2 mb-1 sm:my-3  tracking-tight text-white text-center">
+                  <h2
+                    class="text-mobile-h3  leading-mobile-h3  font-black sm:text-3xl mt-2 mb-1 sm:my-3  tracking-tight text-white text-center">
                     Lass uns über dein Projekt reden
                   </h2>
                   <a href="https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07"
