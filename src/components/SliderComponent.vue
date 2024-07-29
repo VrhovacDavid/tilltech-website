@@ -8,8 +8,8 @@
           <div class="icon-container my-2 p-4 rounded-full">
             <img :src="slide.icon" :alt="slide.title" class="slide-icon" loading="lazy">
           </div>
-          <h3 class="text-xl font-bold py-2">{{ slide.title }}</h3>
-          <p class="py-2 text-gray-600">{{ slide.description }}</p>
+          <h3 class="text-mobile-h4 font-bold py-2">{{ slide.title }}</h3>
+          <p class="py-2 text-gray-600 text-mobile-body leading-mobile-body">{{ slide.description }}</p>
         </div>
       </div>
     </div>

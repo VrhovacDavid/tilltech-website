@@ -17,22 +17,22 @@
 
 
                 <h1
-                    class="text-4xl leading-8 sm:leading-normal sm:text-5xl lg:text-6xl xl:text-6xl font-black text-white">
+                    class="text-mobile-h1 leading-mobile-h1 sm:text-h1 sm:leading-h1  font-black text-white">
                     Mehr Zeit für dein eigenes Kerngeschäft
                 </h1>
-                <p class="block sm:hidden text-white my-2 text-sm sm:text-base">Mit unserem flexiblen Abo-Modell hast du
+                <p class="block sm:hidden text-white my-2 text-mobile-body leading-mobile-body sm:text-base">Mit unserem flexiblen Abo-Modell hast du
                     alle IT-Services an einem Ort die du für dein Unternehmen brauchst.</p>
-                <p class="hidden sm:block text-white my-2 text-sm sm:text-base">Mit unserem flexiblen Abo-Modell für
+                <p class="hidden sm:block text-white my-2 text-bodyLG leading-bodyLG">Mit unserem flexiblen Abo-Modell für
                     Grafikdesign, Developement, Marketing und Content Creation hast du alle Services an einem Ort die du
                     für dein Unternehmen brauchst, du kannst Sie jederzeit pausieren oder kündigen.</p>
 
                 <div class="my-2  flex flex-col sm:flex-row items-center">
                     <a href="#pricing"
-                        class="text-sm  sm:text-base px-4 font-bold bg-btn-black shadow-lg shadow-white/20 rounded-full py-2 text-white">
+                        class="text-sm  sm:text-bodyLG px-4 font-bold bg-btn-black shadow-lg shadow-white/20 rounded-full py-2.5 text-white">
                         Projekt Starten
                     </a>
                     <a href="https://calendly.com/tilltech/tilltech-infogesprach"
-                        class="text-sm  sm:text-base px-4 font-medium leading-6 py-2 text-white"> oder
+                        class="text-sm  sm:text-bodyLG px-4 font-medium leading-6 py-2 text-white"> oder
                         Call buchen
                     </a>
 

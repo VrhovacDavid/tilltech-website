@@ -1,13 +1,13 @@
 <template>
     <div class=" py-16 sm:py-32">
         <div class="mx-auto max-w-5xl px-4 lg:px-8">
-            <div class="mx-auto max-w-7xl text-center">
+            <div class="mx-auto max-w-7xl text-start">
 
-                <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Unsere Flexiblen Preispläne
+                <h2 class="mt-2 text-mobile-h2 leading-mobile-h2 font-black tracking-tight text-gray-900 sm:text-5xl">Unsere Flexiblen Preispläne
                 </h2>
 
             </div>
-            <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Wir wissen, wie schnell sich
+            <p class="mx-auto mt-6 max-w-2xl text-start text-mobile-bodyLG leading-mobile-bodyLG text-gray-600">Wir wissen, wie schnell sich
                 die Bedürfnisse eines Unternehmens ändern können. Deshalb bieten wir flexible Preispläne, die sich
                 deinem Business anpassen.
             </p>
@@ -23,7 +23,7 @@
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-100 opacity-75"></span>
                 <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
             </span>
-            <span class="text-white text-xs font-semibold">Wenig Plätze verfügbar</span>
+            <span class="text-white text-mobile-bodySM font-semibold">Wenig Plätze verfügbar</span>
         </div>
         <h3 class="text-4xl sm:text-5xl md:text-6xl font-black text-white">Jetzt TillTech beitreten</h3>
     </div>
@@ -32,8 +32,8 @@
         <a href="https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07">
             <div class="flex border-2 rounded-lg p-2 items-center gap-x-4 hover:bg-neutral-50/10 cursor-pointer my-2">
                 <div class="flex-flex-col">
-                    <h4 class="text-white font-black sm:text-xl">Buche einen 15Min. Intro Call</h4>
-                    <p class="text-xs sm:text-sm text-white">Erfahre mehr darüber, wie TillTech funktioniert und wie wir helfen können.</p>
+                    <h4 class="text-white text-mobile-bodyLG leading-mobile-bodyLG font-black sm:text-xl">Buche einen 15Min. Intro Call</h4>
+                    <p class="text-mobile-bodySM leading-mobile-bodySM sm:text-sm text-white">Erfahre mehr darüber, wie TillTech funktioniert und wie wir helfen können.</p>
                 </div>
                 <div>
                     <img class="h-10 w-10" src="/Icons/Forward.svg" alt="">
@@ -44,8 +44,8 @@
         <a href="https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07">
             <div class="flex border-2 rounded-lg p-2 items-center gap-x-4 hover:bg-neutral-50/10 cursor-pointer my-2">
                 <div class="flex-flex-col">
-                    <h4 class="text-white font-black  sm:text-xl">Empfiehl jemanden & verdiene</h4>
-                    <p class="text-xs sm:text-sm text-white">Verdiene 10% monatliche wiederkehrende Provisionen für jede Empfehlung.</p>
+                    <h4 class="text-white font-black text-mobile-bodyLG leading-mobile-bodyLG  sm:text-xl">Empfiehl jemanden & verdiene</h4>
+                    <p class="text-mobile-bodySM leading-mobile-bodySM sm:text-sm text-white">Verdiene 10% monatliche wiederkehrende Provisionen für jede Empfehlung.</p>
                 </div>
                 <div>
                     <img class="h-10 w-10" src="/Icons/Forward.svg" alt="">
@@ -64,7 +64,7 @@
                     <div class="mt-8 flex justify-start ">
                         <fieldset aria-label="Payment frequency">
                             <RadioGroup v-model="frequency"
-                                class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 background-gradient ring-1 ring-inset ring-gray-200">
+                                class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-mobile-bodySM font-semibold leading-5 background-gradient ring-1 ring-inset ring-gray-200">
                                 <RadioGroupOption as="template" v-for="option in frequencies" :key="option.value"
                                     :value="option" v-slot="{ checked }">
                                     <div
@@ -78,16 +78,16 @@
                     <!-- Display selected price based on frequency -->
                     <p class="mt-6 flex items-baseline gap-x-1">
                         <span
-                            :class="[tier.featured ? 'text-white' : 'text-gray-900', 'text-4xl font-bold tracking-tight']">{{
+                            :class="[tier.featured ? 'text-white' : 'text-gray-900', 'text-mobile-h1 font-black tracking-tight']">{{
                                 typeof tier.price === 'string' ? tier.price : tier.price[frequency.value] }}</span>
                         <span v-if="typeof tier.price !== 'string'"
-                            :class="[tier.featured ? 'text-gray-300' : 'text-gray-600', 'text-sm font-semibold leading-6']">{{
+                            :class="[tier.featured ? 'text-gray-300' : 'text-gray-600', 'text-mobile-body font-semibold leading-6']">{{
                                 frequency.priceSuffix }}</span>
                     </p>
 
 
                     <ul role="list"
-                        :class="[tier.featured ? 'text-gray-300' : 'text-gray-600', 'mt-8 space-y-3 text-sm leading-6 xl:mt-10']">
+                        :class="[tier.featured ? 'text-gray-300' : 'text-gray-600', 'mt-8 space-y-3 text-mobile-body leading-6 xl:mt-10']">
                         <li v-for="feature in tier.features[frequency.value]" :key="feature" class="flex gap-x-3">
                             <CheckIcon :class="[tier.featured ? 'text-white' : 'text-indigo-600', 'h-6 w-5 flex-none']"
                                 aria-hidden="true" />
@@ -96,9 +96,9 @@
                     </ul>
                     <div class="flex flex-row items-center ">
                         <a :href="tier.href[frequency.value]" :aria-describedby="tier.id"
-                            :class="[tier.featured ? 'background-gradient-black text-white hover:bg-white/20 focus-visible:outline-white' : 'bg-btn-black text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600', 'mt-6  block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2']">{{
+                            :class="[tier.featured ? 'background-gradient-black text-white hover:bg-white/20 focus-visible:outline-white' : 'bg-btn-black text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600', 'mt-6  block rounded-md px-3 py-2 text-center text-mobile-bodyLG font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2']">{{
                                 tier.cta }}</a>
-                        <a class="mt-6 block underline rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
+                        <a class="mt-6 block underline rounded-md px-3 py-2 text-center text-mobile-body font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
                             href="https://calendly.com/tilltech/tilltech-infogesprach">oder Call buchen</a> 
                     </div>
 

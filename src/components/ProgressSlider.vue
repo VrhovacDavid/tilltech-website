@@ -96,7 +96,7 @@ watch(active, () => {
 
 
 
-        <h2 class="font-bold text-4xl">So funktioniert's!</h2>
+        <h2 class="font-black text-mobile-h2">So funktioniert's!</h2>
 
         <template :key="index" v-for="(item, index) in items">
 
@@ -109,10 +109,10 @@ watch(active, () => {
                 <span class="flex items-center justify-center relative w-10 h-10 rounded-full background-gradient mb-2">
                   <img :src="item.buttonIcon" :alt="item.title">
                 </span>
-                <span class="block text-lg  font-black text-slate-900 mb-2">{{ item.title }}</span>
+                <span class="block text-mobile-h5  font-black text-slate-900 mb-2">{{ item.title }}</span>
               </div>
 
-              <span class="block text-sm text-start font-medium text-slate-900 mb-2">{{ item.desc }}</span>
+              <span class="block text-mobile-body text-start font-medium text-slate-900 mb-2">{{ item.desc }}</span>
               <span class="block relative w-full bg-slate-200 h-1 rounded-full" role="progressbar"
                 aria-label="progressbar" :aria-valuenow="active === index ? progress : 0" aria-valuemin="0"
                 aria-valuemax="100">

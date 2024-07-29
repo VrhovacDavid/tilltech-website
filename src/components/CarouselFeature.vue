@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="mx-auto  text-center px-4">
+        <div class="mx-auto  text-start px-4">
 
-<h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Es war noch nie so einfach!</h2>
-<p class="mt-6  text-gray-600">Geniesse die Freiheit, dich auf dein Geschäft zu konzentrieren, während wir uns um deine kreativen Bedürfnisse kümmern.</p>
+<h2 class="mt-2 text-mobile-h2 leading-mobile-h2 font-black tracking-tight text-gray-900  ">Es war noch nie so einfach!</h2>
+<p class="mt-6   text-gray-600 text-mobile-bodyLG">Geniesse die Freiheit, dich auf dein Geschäft zu konzentrieren, während wir uns um deine kreativen Bedürfnisse kümmern.</p>
 </div>
       <SliderComponent />
     </div>

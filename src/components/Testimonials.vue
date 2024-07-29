@@ -1,7 +1,7 @@
 <template>
     <section class="">
         <div class="mx-auto max-w-screen-xl px-4  sm:px-6 lg:px-8 lg:py-16">
-            <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            <h2 class="text-start text-mobile-h2 leading-mobile-h2 font-black tracking-tight text-gray-900 sm:text-5xl">
                 Unsere Bewertungen sprechen für sich
             </h2>
 
@@ -41,12 +41,12 @@
                                 </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">Maximilian Murtinger</p>
-                            <p class="mt-0.5 text-sm  text-gray-900">NextFertility St. Gallen AG</p>
+                            <p class="mt-0.5 text-mobile-bodyLG font-medium text-gray-900">Maximilian Murtinger</p>
+                            <p class="mt-0.5 text-mobile-bodySM  text-gray-900">NextFertility St. Gallen AG</p>
                         </div>
                     </div>
 
-                    <p class="mt-4 text-gray-700">
+                    <p class="mt-4 text-mobile-body  text-gray-700">
                         TillTech namentlich David hat uns als User mit Geduld, Struktur, Klarheit und Verständlichkeit
                         binnen kürzester Zeit auf den aktuellsten Stand eines modernen Marketing gebracht. Homepage,
                         Graphisches Design, Social Media und KI. Alles komplett verständlich für uns als Kunden. Das hat
@@ -89,12 +89,12 @@
                                 </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">Jessica Zeder</p>
-                            <p class="mt-0.5 text-sm  text-gray-900">Dipon Schweiz GmbH</p>
+                            <p class="mt-0.5  text-mobile-bodyLG font-medium text-gray-900">Jessica Zeder</p>
+                            <p class="mt-0.5  text-mobile-bodySM  text-gray-900">Dipon Schweiz GmbH</p>
                         </div>
                     </div>
 
-                    <p class="mt-4 text-gray-700">
+                    <p class="mt-4  text-mobile-body text-gray-700">
                         Wir haben begonnen Meta Kampagnen mit TillTech zu schalten und sehr gute Ergebnisse erzielt.
                         Darüber hinaus waren auch Produktfotos und Filmschnitte mit dabei, diese wurden dann für die
                         Kampagnen verwendet und können auch anderswo eingesetzt werden. Einfache und zuverlässige
@@ -137,13 +137,13 @@
                                 </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">Markus Kathriner</p>
-                            <p class="mt-0.5 text-sm  text-gray-900">Der Schrankspezialist GmbH</p>
+                            <p class="mt-0.5  text-mobile-bodyLG font-medium text-gray-900">Markus Kathriner</p>
+                            <p class="mt-0.5  text-mobile-bodySM  text-gray-900">Der Schrankspezialist GmbH</p>
 
                         </div>
                     </div>
 
-                    <p class="mt-4 text-gray-700">
+                    <p class="mt-4  text-mobile-body text-gray-700">
                         Habe eine sehr gute Zusammenarbeit mit der Firma Till Tech konnten die Zielgruppe analysieren,
                         und dadurch gezielt Werbung schalten. Ihr macht das super gut, weiter so....
                         M. Kathriner aus Luzern

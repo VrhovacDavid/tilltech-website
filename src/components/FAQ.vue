@@ -2,13 +2,13 @@
   <div class=" flex flex-col sm:flex-row justify-center items-center">
     <div class="max-w-4xl px-4 py-24 sm:py-32 lg:px-8 lg:py-40">
       <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-        <h2 class="text-2xl sm:text-3xl font-bold leading-10 tracking-tight text-gray-900">Häufig gestellte Fragen</h2>
+        <h2 class="font-black text-mobile-h2 leading-mobile-h2 tracking-tight text-gray-900">Häufig gestellte Fragen</h2>
 
         <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
           <Disclosure as="div" v-for="faq in faqs" :key="faq.question" class="pt-6 max-w-2xl" v-slot="{ open }">
             <dt>
               <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-900">
-                <span class="text-base font-semibold leading-7">{{ faq.question }}</span>
+                <span class="text-mobile-bodyLG leading-mobile-body font-bold">{{ faq.question }}</span>
                 <span class="ml-6 flex h-7 items-center">
                   <PlusSmallIcon v-if="!open" class="h-6 w-6" aria-hidden="true" />
                   <MinusSmallIcon v-else class="h-6 w-6" aria-hidden="true" />
@@ -16,7 +16,7 @@
               </DisclosureButton>
             </dt>
             <DisclosurePanel as="dd" class="mt-2 pr-12">
-              <p class="text-base leading-7 text-gray-600">{{ faq.answer }}</p>
+              <p class="text-mobile-body leading-mobile-body text-gray-600">{{ faq.answer }}</p>
             </DisclosurePanel> 
           </Disclosure>
         </dl>
@@ -25,11 +25,11 @@
 
     <div class="border-2 background-gradient p-4  rounded-3xl flex flex-col justify-center items-center mx-4 shadow-xl">
       <img class="h-24 w-24 rounded-full my-2 " src="/Branding/David.webp" alt="">
-      <h3 class="text-xl sm:text-2xl font-black text-center text-white">Buche ein 15 Minuten Intro Call</h3>
+      <h3 class="text-mobile-h3 font-black leading-mobile-h3 text-center text-white">Buche ein 15 Minuten Intro Call</h3>
       <a href="https://calendly.com/tilltech/tilltech-infogesprach"
-        class="my-4 bg-btn-black text-white block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Jetzt
+        class="my-4 bg-btn-black text-white block rounded-md px-3 py-2 text-center text-mobile-bodyLG font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Jetzt
         Call buchen</a>
-      <p class="text-white">Lieber über E-Mail?
+      <p class="text-white text-mobile-body">Lieber über E-Mail?
         <a href="mailto:hello@tilltech.ch" class="ml-2 font-semibold text-orange-400">hello@tilltech.ch</a>
 
       </p>
