@@ -5,7 +5,6 @@ import { store } from '../components/store';
 import supabase from '../lib/supabase';
 import { useRoute } from 'vue-router';
 
-const route = useRoute();
 
 // Configure marked
 marked.setOptions({
@@ -31,17 +30,17 @@ const schlusswortHtml = computed(() => {
   return marked(post.schlusswort || '');
 });
 
-const fetchPost = async (id) => {
-  // Die 'id' sollte von den Routenparametern kommen
-  id = id || route.params.id;
+const route = useRoute();
 
-  // Überprüfen, ob die 'id' tatsächlich definiert ist
-  if (!id) {
-    console.error('No ID provided or found in route parameters');
+const fetchPost = async (slug) => {
+  slug = slug || route.params.slug;
+
+  if (!slug) {
+    console.error('No slug provided or found in route parameters');
     return;
   }
 
-  const found = store.posts.find(x => x.id == parseInt(id));
+  const found = store.posts.find(x => x.slug === slug);
 
   if (found) {
     Object.assign(post, found);
@@ -51,7 +50,7 @@ const fetchPost = async (id) => {
   let { data, error } = await supabase
     .from('posts')
     .select()
-    .eq('id', id)
+    .eq('slug', slug)
     .single();
 
   if (error) {
@@ -61,8 +60,8 @@ const fetchPost = async (id) => {
   Object.assign(post, data);
 };
 
-// Die ID direkt beim Aufruf der Funktion übergeben
-fetchPost(route.params.id);
+// Call fetchPost with the slug from the route
+fetchPost(route.params.slug);
 </script>
 
 

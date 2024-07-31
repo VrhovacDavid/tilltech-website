@@ -49,7 +49,7 @@ const router = createRouter({
       component: Portfolio
     },
     {
-      path: '/blogpost/:id',
+      path: '/blogpost/:slug',
       name: 'BlogPost',
       component: BlogPost
     },
