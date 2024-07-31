@@ -212,96 +212,99 @@ onUnmounted(() => {
 
 
 .markdown-body h1 {
-  font-size: 2rem !important;
-  line-height: 2rem !important;
+  color: #322261 !important;
+  line-height: 4.5rem !important;
+  font-size: 3.75rem !important;
   font-weight: 900 !important;
-  padding-top: 2em;
-  padding-bottom: 4em;
-  margin-bottom: 4em;
-  color: #322261;
+  margin-bottom: 1rem !important;
 }
 
 .markdown-body h2 {
-  font-size: 1.75rem !important;
-  line-height: 2.25rem !important;
+  color: #322261 !important;
+  line-height: 3rem !important;
+  font-size: 2.75rem !important;
   font-weight: 900 !important;
-  color: #322261;
+  margin-bottom: 0.75rem !important;
+
+
 }
 
 .markdown-body h3 {
-  font-size: 1.563rem !important;
-  line-height: 2rem !important;
+  color: #322261 !important;
+  line-height: 3rem !important;
+  font-size: 2.2rem !important;
   font-weight: 900 !important;
-  margin-top: 1.5rem;
-  color: #322261;
+  margin-bottom: 0.5rem !important;
+
 
 }
 
 .markdown-body h4 {
-  font-size: 1.375rem !important;
-  line-height: 1.75rem !important;
-  font-weight: 900 !important;
-  margin-bottom: 0.5em;
-  color: #666;
+  color: #322261 !important;
+  line-height: 2.5rem !important;
+  font-size: 1.938rem !important;
 }
 
 .markdown-body h5 {
-  font-size: 1.25rem !important;
-  line-height: 1.625rem !important;
-  font-weight: 900 !important;
-  margin-bottom: 0.5em;
-  color: #777;
+  color: #322261 !important;
+  line-height: 2rem !important;
+  font-size: 1.563rem !important;
 }
 
 .markdown-body h6 {
-  font-size: 1.125rem !important;
-  line-height: 1.5rem !important;
-  font-weight: 900 !important;
-  margin-bottom: 0.5em;
-  color: #888;
+  color: #322261 !important;
+  line-height: 1.75rem !important;
+  font-size: 1.25rem !important;
 }
 
 .markdown-body p {
-  font-size: 1rem !important;
+  color: #302457 !important;
   line-height: 1.5rem !important;
-  padding-bottom: 0.5rem !important;
-  color: #302457;
+  font-size: 1rem !important;
 }
 
-@media (min-width: 1024px) {
+.markdown-body .highlight {
+  color: #62668A !important;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
   .markdown-body h1 {
-    font-size: 3.75rem !important;
-    line-height: 4.5rem !important;
+    line-height: 2rem !important;
+    font-size: 2rem !important;
+    font-weight: 900;
   }
 
   .markdown-body h2 {
-    font-size: 3rem !important;
-    line-height: 3.75rem !important;
+    line-height: 2.25rem !important;
+    font-size: 1.75rem !important;
+    font-weight: 900 !important;
   }
 
   .markdown-body h3 {
-    font-size: 2.438rem !important;
-    line-height: 3rem !important;
+    line-height: 2rem !important;
+    font-size: 1.563rem !important;
+    font-weight: 900 !important;
   }
 
   .markdown-body h4 {
-    font-size: 1.938rem !important;
-    line-height: 2.5rem !important;
+    line-height: 1.75rem !important;
+    font-size: 1.375rem !important;
   }
 
   .markdown-body h5 {
-    font-size: 1.563rem !important;
-    line-height: 2rem !important;
+    line-height: 1.625rem !important;
+    font-size: 1.25rem !important;
   }
 
   .markdown-body h6 {
-    font-size: 1.25rem !important;
-    line-height: 1.75rem !important;
+    line-height: 1.5rem !important;
+    font-size: 1.125rem !important;
   }
 
   .markdown-body p {
-    font-size: 1rem !important;
     line-height: 1.5rem !important;
+    font-size: 1rem !important;
   }
 }
 
