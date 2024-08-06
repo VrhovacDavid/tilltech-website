@@ -16,13 +16,14 @@
 
 
 
-                <h1
-                    class="text-mobile-h1 leading-mobile-h1 sm:text-h1 sm:leading-h1  font-black text-white">
+                <h1 class="text-mobile-h1 leading-mobile-h1 sm:text-h1 sm:leading-h1  font-black text-white">
                     Mehr Zeit für dein eigenes Kerngeschäft
                 </h1>
-                <p class="block sm:hidden text-white my-2 text-mobile-body leading-mobile-body sm:text-base">Mit unserem flexiblen Abo-Modell hast du
+                <p class="block sm:hidden text-white my-2 text-mobile-body leading-mobile-body sm:text-base">Mit unserem
+                    flexiblen Abo-Modell hast du
                     alle IT-Services an einem Ort die du für dein Unternehmen brauchst.</p>
-                <p class="hidden sm:block text-white my-2 text-bodyLG leading-bodyLG">Mit unserem flexiblen Abo-Modell für
+                <p class="hidden sm:block text-white my-2 text-bodyLG leading-bodyLG">Mit unserem flexiblen Abo-Modell
+                    für
                     Grafikdesign, Developement, Marketing und Content Creation hast du alle Services an einem Ort die du
                     für dein Unternehmen brauchst, du kannst Sie jederzeit pausieren oder kündigen.</p>
 

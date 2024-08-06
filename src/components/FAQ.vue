@@ -2,7 +2,7 @@
   <div class=" flex flex-col sm:flex-row justify-center items-center">
     <div class="max-w-4xl px-4 py-24 sm:py-32 lg:px-8 lg:py-40">
       <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-        <h2 class="font-black text-mobile-h2 leading-mobile-h2 tracking-tight text-headings">Häufig gestellte Fragen</h2>
+        <h2 class="font-black text-mobile-h2 leading-mobile-h2 sm:text-h3 sm:leading-h3 tracking-tight text-headings">Häufig gestellte Fragen</h2>
 
         <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
           <Disclosure as="div" v-for="faq in faqs" :key="faq.question" class="pt-6 max-w-2xl" v-slot="{ open }">

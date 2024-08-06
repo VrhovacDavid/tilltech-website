@@ -14,7 +14,7 @@ export default {
       },
 
       lineHeight: {
-        'h1': '4.5rem',
+        'h1': '3.7rem',
         'h2': '3.75rem',
         'h3': '3rem',
         'h4': '2.5rem',

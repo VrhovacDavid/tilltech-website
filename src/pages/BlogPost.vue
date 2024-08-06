@@ -224,6 +224,17 @@ fetchPost(route.params.slug);
   margin: 0;
 }
 
+.markdown-body a {
+  font-weight: 700 !important;
+  color: #322261 !important;
+}
+
+.markdown-body a:hover {
+  font-weight: 700 !important;
+  text-decoration: underline;
+  color: #322261 !important;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .markdown-body h1 {
@@ -264,6 +275,16 @@ fetchPost(route.params.slug);
     font-size: 1rem !important;
   }
 
+  .markdown-body a {
+  font-weight: 700 !important;
+  color: #322261 !important;
+}
+
+.markdown-body a:hover {
+  font-weight: 700 !important;
+  text-decoration: underline;
+  color: #322261 !important;
+}
 
 
   .markdown-body summary {

@@ -4,11 +4,11 @@
       <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center">
         <div class=" lg:px-0 lg:pr-4 lg:pt-4">
           <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
-            <h2 class="mb-2 text-mobile-h2 font-black tracking-tight text-headings ">Du kennst das sicher...</h2>
+            <h2 class="mb-2 text-mobile-h2 sm:text-h3 sm:leading-h3 font-black tracking-tight text-headings ">Du kennst das sicher...</h2>
             <p class=" mb-8 text-mobile-bodyLG leading-mobile-bodyLG text-paragraphs">Mitten in einem wichtigen Projekt merkst du plötzlich, dass
               du professionelle IT-Dienstleistungen brauchst. Die Suche beginnt, du verbringst Stunden mit Anfragen und
               Verhandlungen, nur um am Ende unzufrieden zu sein. <strong>Frustrierend, oder?</strong></p>
-            <h3 class="mb-2 text-mobile-h4 font-black text-headings">Erkennst du dich wieder?</h3>
+            <h3 class="mb-2 text-mobile-h4 sm:text-h4 sm:leading-h4 font-black text-headings">Erkennst du dich wieder?</h3>
             <dl class="mb-8 max-w-xl space-y-4 text-mobile-body leading-mobile-body text-highlights lg:max-w-none">
               <div v-for="feature in features" :key="feature.name" class="flex items-start gap-2">
                 <dt class="flex-shrink-0 mt-1">
@@ -17,7 +17,7 @@
                 <dd class="flex-grow">{{ feature.description }}</dd>
               </div>
             </dl>
-            <h3 class="mb-2 text-mobile-h4 font-black text-headings">Wir haben die Lösung!</h3>
+            <h3 class="mb-2 text-mobile-h4 sm:text-h4 sm:leading-h4 font-black text-headings">Wir haben die Lösung!</h3>
            
             <p class=" text-mobile-body leading-mobile-body text-paragraphs">Alles an einem Ort. Stelle so viele Anfragen, wie du willst, und wir
               bearbeiten sie innerhalb von 1-2 Tagen. Kein lästiges Agentur-Hopping mehr. Pausiere oder kündige dein Abo

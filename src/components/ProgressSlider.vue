@@ -96,7 +96,7 @@ watch(active, () => {
 
 
 
-        <h2 class="font-black   text-mobile-h2 text-headings">So funktioniert's!</h2>
+        <h2 class="font-black   text-mobile-h2 sm:text-h3 sm:leading-h3 text-headings">So funktioniert's!</h2>
 
         <template :key="index" v-for="(item, index) in items">
 
@@ -109,7 +109,7 @@ watch(active, () => {
                 <span class="flex items-center justify-center relative w-10 h-10 rounded-full background-gradient mb-2">
                   <img :src="item.buttonIcon" :alt="item.title">
                 </span>
-                <span class="block text-mobile-h5  font-black text-headings mb-2">{{ item.title }}</span>
+                <span class="block text-mobile-h5 sm:text-h5 sm:leading-h5  font-black text-headings mb-2">{{ item.title }}</span>
               </div>
 
               <span class="block text-mobile-body text-start  text-paragraphs mb-2">{{ item.desc }}</span>

@@ -3,11 +3,11 @@
         <div class="mx-auto max-w-5xl px-4 lg:px-8">
             <div class="mx-auto max-w-7xl text-start">
 
-                <h2 class="mt-2 text-mobile-h2 leading-mobile-h2 font-black tracking-tight text-headings sm:text-5xl">Unsere Flexiblen Preispläne
+                <h2 class="mt-2 text-mobile-h2 leading-mobile-h2 sm:text-h3 sm:leading-h3 font-black tracking-tight text-headings sm:text-5xl">Unsere Flexiblen Preispläne
                 </h2>
 
             </div>
-            <p class="mx-auto mt-6 max-w-2xl text-start text-mobile-bodyLG leading-mobile-bodyLG text-highlights">Wir wissen, wie schnell sich
+            <p class="mx-auto mt-6 max-w-7xl text-start text-mobile-bodyLG leading-mobile-bodyLG text-highlights">Wir wissen, wie schnell sich
                 die Bedürfnisse eines Unternehmens ändern können. Deshalb bieten wir flexible Preispläne, die sich
                 deinem Business anpassen.
             </p>

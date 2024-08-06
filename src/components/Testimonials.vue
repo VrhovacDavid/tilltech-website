@@ -1,8 +1,8 @@
 <template>
     <section class="">
         <div class="mx-auto max-w-screen-xl px-4  sm:px-6 lg:px-8 lg:py-16">
-            <h2 class="text-start text-mobile-h2 leading-mobile-h2 font-black tracking-tight text-headings sm:text-5xl">
-                Unsere Bewertungen sprechen für sich
+            <h2 class="text-start text-mobile-h2 leading-mobile-h2 sm:text-h3 sm:leading-h3 font-black tracking-tight text-headings sm:text-5xl">
+               Unser Kundenfeedback
             </h2>
 
             <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
