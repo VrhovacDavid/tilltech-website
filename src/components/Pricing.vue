@@ -45,7 +45,7 @@
             <div class="flex border-2 rounded-lg p-2 items-center gap-x-4 hover:bg-neutral-50/10 cursor-pointer my-2">
                 <div class="flex-flex-col">
                     <h4 class="text-white font-black text-mobile-bodyLG leading-mobile-bodyLG  sm:text-xl">Empfiehl jemanden & verdiene</h4>
-                    <p class="text-mobile-bodySM leading-mobile-bodySM sm:text-sm text-white">Verdiene 10% monatliche wiederkehrende Provisionen für jede Empfehlung.</p>
+                    <p class="text-mobile-bodySM leading-mobile-bodySM sm:text-sm text-white">Verdiene 5% monatliche wiederkehrende Provisionen für jede Empfehlung.</p>
                 </div>
                 <div>
                     <img class="h-10 w-10" src="/Icons/Forward.svg" alt="">
@@ -124,8 +124,8 @@ const tiers = [
     {
         name: 'Mitgliedschaft',
         id: 'tier-enterprise',
-        href: { monthly: 'https://buy.stripe.com/6oE6pP0Vs611gXCfZ6', annually: 'https://buy.stripe.com/cN2aG57jQ0GH6iYbIR' },
-        price: { monthly: '3995.-', annually: '4995.-' },
+        href: { monthly: 'https://buy.stripe.com/9AQcOd47E611dLq3co', annually: 'https://buy.stripe.com/4gweWldIegFF22I9AL' },
+        price: { monthly: '4995.-', annually: '5995.-' },
 
         features: {
             monthly: [
