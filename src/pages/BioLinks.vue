@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex flex-col  lg:flex-row xl:flex-row  justify-center items-start lg:items-center xl:items-center  overflow-hidden pb-12 sm:pb-24 bg-primary">
+        class="flex flex-col  lg:flex-row xl:flex-row  justify-center items-start lg:items-center xl:items-center  overflow-hidden  sm:pb-24 bg-primary">
 
 
 
@@ -17,9 +17,8 @@
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-black text-white">
                     TillTech
                 </h1>
-                <p class=" text-white my-2 text-sm sm:text-base text-center">Designer und Software Entwickler aus der
-                    Schweiz. Ich erstelle Design's, Webseiten & Software für Firmen Privatpersonen und teile meinen
-                    kreativen Prozess online.</p>
+                <p class=" text-white my-2 text-sm sm:text-base text-center">Designer und Softwareentwickler aus der
+                    Schweiz 🇨🇭. Grösste IT-Service-Firma der Schweiz mit über 80 Services.</p>
 
 
 
@@ -55,8 +54,7 @@
                 <img class=" rounded-t-xl bg-white/5 ring-1 ring-white/10" src="/Download.webp" alt="App screenshot" />
 
                 <h3 class="text-center font-black text-3xl text-white pt-2 my-4">Free Icon Pack 🔥</h3>
-                <p class="mt-6 px-4 text-center text-gray-300">Eine Kollektion von +200 Icons in Vector und SVG Formaten
-                </p>
+
                 <form class="my-4 mx-4 sm:flex sm:max-w-md" ref="form" @submit.prevent="sendEmail">
                     <label for="email-address" class="sr-only">Email address</label>
                     <input type="email" name="user_email"
@@ -70,22 +68,53 @@
 
             </div>
 
+            <a href="/portfolio">
+                <div
+                    class=" rounded-xl my-6 border-2 border-gray-400 w-full  mx-auto background-gradient-black flex items-center justify-between px-4">
+                    <div class="flex gap-x-2 items-center align-middle justify-center a">
+                        <img src="/Icons/Fire.svg" alt="Arrow">
+                        <h3 class="text-center font-black text-2xl text-white  my-4">Portfolio</h3>
+                    </div>
 
-            <div class=" rounded-xl my-6 border-2 border-gray-400 w-full  mx-auto background-gradient-black">
-                <h3 class="text-center font-black text-2xl text-white pt-2 my-4">Portfolio</h3>
-            </div>
 
-            <div class=" rounded-xl my-6 border-2 border-gray-400 w-full  mx-auto background-gradient-black">
-                <h3 class="text-center font-black text-2xl text-white pt-2 my-4">Webseite</h3>
-            </div>
+                    <img src="/Icons/Arrow.svg" alt="Arrow">
+                </div>
+            </a>
 
-            <div class=" rounded-xl my-6 border-2 border-gray-400 w-full  mx-auto background-gradient-black">
-                <h3 class="text-center font-black text-2xl text-white pt-2 my-4">Camera Gear</h3>
-            </div>
 
-            <div class=" rounded-xl mt-6 border-2 border-gray-400 w-full  mx-auto background-gradient-black">
-                <h3 class="text-center font-black text-2xl text-white pt-2 my-4">Online Shop</h3>
-            </div>
+            <a href="/">
+                <div
+                    class=" rounded-xl my-6 border-2 border-gray-400 w-full  mx-auto background-gradient-black flex items-center justify-between px-4">
+                    <div class="flex gap-x-2 items-center align-middle justify-center a">
+                        <img src="/Icons/Website.svg" alt="Arrow">
+                        <h3 class="text-center font-black text-2xl text-white  my-4">Webseite</h3>
+                    </div>
+                    <img src="/Icons/Arrow.svg" alt="Arrow">
+                </div>
+            </a>
+
+
+            <a href="https://tilltech.shop/">
+                <div
+                    class=" rounded-xl my-6 border-2 border-gray-400 w-full  mx-auto background-gradient-black flex items-center justify-between px-4">
+                    <div class="flex gap-x-2 items-center align-middle justify-center a">
+                        <img src="/Icons/Cart.svg" alt="Arrow">
+                        <h3 class="text-center font-black text-2xl text-white  my-4">Online Shop</h3>
+                    </div>
+                    <img src="/Icons/Arrow.svg" alt="Arrow">
+                </div>
+            </a>
+
+            <a href="/">
+                <div
+                    class=" rounded-xl my-6 border-2 border-gray-400 w-full  mx-auto background-gradient-black flex items-center justify-between px-4">
+                    <div class="flex gap-x-2 items-center align-middle justify-center a">
+                        <img src="/Icons/Camera.svg" alt="Arrow">
+                        <h3 class="text-center font-black text-2xl text-white  my-4">Camera Gear</h3>
+                    </div>
+                    <img src="/Icons/Arrow.svg" alt="Arrow">
+                </div>
+            </a>
 
         </div>
 
