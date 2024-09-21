@@ -87,15 +87,11 @@ const navigation = {
   support: [
     { name: 'Gratis Download 🔥', href: '/#download' },
     { name: 'Bio Links', href: '/links' },
-    { name: 'Kamera ausstattung', href: '#' },
-    { name: 'Shop (Coming Soon)', href: '#' },
     { name: 'TillTech & Klimawandel', href: 'https://climate.stripe.com/nAoVjH' },
   ],
   company: [
     { name: 'Kundenportal', href: 'https://billing.stripe.com/p/login/28oaHy9m414Bfgk288' },
-    { name: 'Kontakt', href: '#' },
     { name: 'Call buchen', href: 'https://calendly.com/tilltech/tilltech-infogesprach?month=2024-07' },
-    { name: 'Freund empfehlen', href: '#' },
 
   ],
   legal: [

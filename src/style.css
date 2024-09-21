@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import '/Users/David/Desktop/tilltech/tt-website/src/css/additional-styles/utility-patterns.css';
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 .background-gradient {
   background: linear-gradient(to bottom right, #5046E5, #9966FF);

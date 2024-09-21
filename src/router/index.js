@@ -7,6 +7,7 @@ import Portfolio from '../pages/Portfolio.vue'
 import BlogPost from '../pages/BlogPost.vue'
 import BioLinks from '../pages/BioLinks.vue'
 import NotFound from '../pages/NotFound.vue'
+import Landing from '../NewSite/Landing.vue'
 
 
 
@@ -59,6 +60,11 @@ const router = createRouter({
       component: BioLinks
     },
 
+    {
+      path: '/landingNew',
+      name: 'Landing',
+      component: Landing
+    },
 
    
   ],
